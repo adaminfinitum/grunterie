@@ -1,1 +1,96 @@
-*.DS_Store
+# Ignore configuration files that may contain sensitive information
+wp-config.php
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+# *.sql (allowing .sql so that we can store backups of our database in Git
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# SASS #
+######################
+*.sass-cache
+*.map
+
+# JS #
+######################
+js/_app.concat.js
+js/_lib.concat.js
+wordpress/wp-content/themes/base/library/js/*.js
+wordpress/wp-content/themes/base/library/js/
+
+# CSS #
+######################
+css/
+css/*.css
+wordpress/wp-content/themes/base/library/js/css/
+wordpress/wp-content/themes/base/library/js/css/*.css
+templates/css/*.css
+templates/css/
+
+# REPO IGNORES #
+######################
+bower_components/
+node_modules/
+sftp-config.json
+
+
+# Sublime Text
+# =========================
+
+# workspace files are user-specific
+*.sublime-workspace
+
+
+# PHP Storm
+# =========================
+*.idea
+
+
+# Image Editing Software
+# =========================
+
+*.psd
+*.ai
+*.xcf
+
+
+# OSX
+# =========================
+
+.AppleDouble
+.LSOverride
+
+# Icon must ends with two \r.
+Icon
+
