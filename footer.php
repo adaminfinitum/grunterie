@@ -15,18 +15,15 @@
 	</div>
 	<div class="row love-reverie">
 		<div class="large-12 columns">
-			<p>&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>. <?php _e('Made with Love in','reverie'); ?> <a href="http://themefortress.com/reverie/" rel="nofollow" title="Reverie Framework">Reverie</a>.</p>
+			<p><b class="copyleft">&copy;</b> <?php echo date('Y'); ?> </p>
 		</div>
 	</div>
 </footer>
-
 <?php wp_footer(); ?>
-
 <script>
 	(function($) {
 		$(document).foundation();
 	})(jQuery);
 </script>
-	
 </body>
 </html>
