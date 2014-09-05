@@ -16,9 +16,9 @@
 // @import "foundation";
 
 // Load some Compass magic, note you will need to install Compass first
-@import "compass/css3/shared";
-@import "compass/css3/border-radius";
-@import "compass/css3/transition";
+//@import "compass/css3/shared";
+//@import "compass/css3/border-radius";
+//@import "compass/css3/transition";
 
 /* Start to customize Reverie */
 
@@ -298,8 +298,6 @@ ol.commentlist {
 	}
 }
 
-
-
 // Start the footer
 footer.full-width {
 	background-color: #fff;
@@ -358,3 +356,384 @@ footer.full-width {
 		padding-top: rem-calc(32);
 	}
 }
+
+//======================================
+/* WordPress */
+//======================================
+
+//@import "accessibility";
+/* Text meant only for screen readers */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    &:hover, &:active, &:focus {
+        background-color: #f1f1f1;
+        border-radius: 3px;
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+        clip: auto !important;
+        color: #21759b;
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        height: auto;
+        left: 5px;
+        line-height: normal;
+        padding: 15px 23px 14px;
+        text-decoration: none;
+        top: 5px;
+        width: auto;
+        z-index: 100000;
+        /* Above WP toolbar */
+    }
+}
+
+//@import "admin";
+/* Fix for the admin bar on mobile */
+//@media screen and ( max-width: 782px ) {
+//	#wpadminbar {
+//		position: fixed;
+//	}
+//}
+
+
+//@import "clearings";
+/* ==========================================================================
+   Clearings
+   ========================================================================== */
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+    content: '';
+    display: table;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+    clear: both;
+}
+
+//@import "content";
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+.sticky {}
+
+.hentry {
+    margin: 0 0 1.5em;
+}
+
+.byline, .updated {
+    display: none;
+}
+
+.single .byline, .group-blog .byline {
+    display: inline;
+}
+
+.page-content, .entry-content, .entry-summary {
+    margin: 1.5em 0 0;
+}
+
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+    display: none;
+}
+
+//@import "image-alignment";
+/* ==========================================================================
+   Alignment
+   ========================================================================== */
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+blockquote.alignleft, img.alignleft {
+    margin: rem-calc(7 24 7 0);
+}
+
+.wp-caption.alignleft {
+    margin: rem-calc(7 14 7 0);
+}
+
+blockquote.alignright, img.alignright {
+    margin: rem-calc(7 0 7 24);
+}
+
+.wp-caption.alignright {
+    margin: rem-calc(7 0 7 14);
+}
+
+blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter {
+    margin-top: rem-calc(7);
+    margin-bottom: rem-calc(7);
+}
+
+.site-content blockquote {
+    &.alignleft, &.alignright {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-top: rem-calc(17);
+        width: 50%;
+    }
+    &.alignleft p, &.alignright p {
+        margin-bottom: rem-calc(17);
+    }
+}
+
+.wp-caption {
+    margin-bottom: rem-calc(24);
+    img[class*="wp-image-"] {
+        display: block;
+        margin: 0;
+    }
+    color: #767676;
+}
+
+.wp-caption-text {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: rem-calc(12);
+    font-style: italic;
+    line-height: 1.5;
+    margin: rem-calc(9) 0;
+    padding-right: rem-calc(10);
+}
+
+.wp-smiley {
+    border: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+//@import "infinite-scrolling";
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .paging-navigation,
+.infinite-scroll.neverending .site-footer {
+    /* Theme Footer (when set to scrolling) */
+    display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+.infinity-end.neverending .site-footer {
+    display: block;
+}
+
+
+//@import "media";
+/* ==========================================================================
+   Media
+   ========================================================================== */
+.page-content img.wp-smiley, .entry-content img.wp-smiley, .comment-content img.wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+.wp-caption {
+    border: 1px solid #ccc;
+    margin-bottom: 1.5em;
+    max-width: 100%;
+    img[class*="wp-image-"] {
+        display: block;
+        margin: 1.2% auto 0;
+        max-width: 98%;
+    }
+}
+
+.wp-caption-text {
+    text-align: center;
+}
+
+.wp-caption .wp-caption-text {
+    margin: 0.8075em 0;
+}
+
+.site-main .gallery {
+    margin-bottom: 1.5em;
+}
+
+.gallery-caption {}
+
+.site-main {
+    .gallery {
+        a img {
+            border: none;
+            height: auto;
+            max-width: 90%;
+        }
+        dd, figcaption {
+            margin: 0;
+        }
+    }
+    .gallery-columns-4 .gallery-item img {}
+}
+
+/* Make sure embeds and iframes fit their containers */
+
+embed, iframe, object {
+    max-width: 100%;
+}
+
+//@import "navigation";
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+//.site-main [class*="navigation"] {
+//    margin: 0 0 rem-calc(25);
+//    @include clearfix;
+//}
+//
+//[class*="navigation"] {
+//    .nav-previous {
+//        float: left;
+//        width: 50%;
+//    }
+//    .nav-next {
+//        float: right;
+//        text-align: right;
+//        width: 50%;
+//    }
+//}
+
+
+//@import "widgets";
+/* ==========================================================================
+   Widgets
+   ========================================================================== */
+.widget {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    margin-bottom: rem-calc(30);
+    word-wrap: break-word;
+    ul, ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        padding: 5px 0;
+    }
+    .children li:last-child {
+        padding-bottom: 0;
+    }
+    li > ul,
+    li > ol {
+        margin-left: rem-calc(20);
+    }
+    select {
+        max-width: 100%;
+    }
+    .search-field {
+        margin-bottom: 0;
+    }
+}
+
+/* Search widget */
+.search-form .search-submit {
+}
+
+
+//
+/* Theme */
+//
+
+//@import "header";
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.site-header {
+	margin-bottom: rem-calc(30);
+	.site-branding {}
+	.site-title {}
+	.site-description {}
+}
+
+
+//@import "navigation";
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+.main-navigation {
+
+}
+
+
+//@import "content";
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+.site-content {
+	article {
+		.entry-header {}
+		.entry-title {}
+		.entry-content {}
+		.entry-meta {}
+	}
+}
+
+
+//@import "sidebar";
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+#secondary {}
+
+
+//@import "footer";
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.site-footer {
+	background: $secondary-color;
+	padding: rem-calc(80 0);
+	.site-info {}
+}
+
+// from app.scss
+
+ //#submit,
+ //input[type='submit'] {
+ // @extend .button;
+ //}
+
+textarea {
+  height: auto;
+}
+
+@import "app";

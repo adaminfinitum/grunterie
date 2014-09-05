@@ -6,12 +6,12 @@ meta.foundation-mq-small {
   width: 0em; }
 
 meta.foundation-mq-medium {
-  font-family: "/only screen and (min-width:24.063em)/";
-  width: 24.063em; }
+  font-family: "/only screen and (min-width:36.063em)/";
+  width: 36.063em; }
 
 meta.foundation-mq-large {
-  font-family: "/only screen and (min-width:48.063em)/";
-  width: 48.063em; }
+  font-family: "/only screen and (min-width:50.063em)/";
+  width: 50.063em; }
 
 meta.foundation-mq-xlarge {
   font-family: "/only screen and (min-width:64.063em)/";
@@ -313,7 +313,7 @@ select {
   .column.small-uncentered.opposite, .columns.small-uncentered.opposite {
     float: right; } }
 
-@media only screen and (min-width:24.063em) {
+@media only screen and (min-width:36.063em) {
   .medium-push-0 {
     position: relative;
     left: 0%;
@@ -580,7 +580,7 @@ select {
     right: 91.66667%;
     left: auto; } }
 
-@media only screen and (min-width:48.063em) {
+@media only screen and (min-width:50.063em) {
   .large-push-0 {
     position: relative;
     left: 0%;
@@ -1028,7 +1028,7 @@ select {
     .small-block-grid-12 > li:nth-of-type(12n+1) {
       clear: both; } }
 
-@media only screen and (min-width:24.063em) {
+@media only screen and (min-width:36.063em) {
   .medium-block-grid-1 > li {
     width: 100%;
     list-style: none; }
@@ -1114,7 +1114,7 @@ select {
     .medium-block-grid-12 > li:nth-of-type(12n+1) {
       clear: both; } }
 
-@media only screen and (min-width:48.063em) {
+@media only screen and (min-width:50.063em) {
   .large-block-grid-1 > li {
     width: 100%;
     list-style: none; }
@@ -1392,7 +1392,7 @@ button::-moz-focus-inner {
   border: 0;
   padding: 0; }
 
-@media only screen and (min-width:24.063em) {
+@media only screen and (min-width:36.063em) {
   button, .button {
     display: inline-block; } }
 
@@ -1442,7 +1442,7 @@ button::-moz-focus-inner {
       border-color: rgba(255, 255, 255, 0.5); }
     .button-group.stack-for-small > li:first-child button, .button-group.stack-for-small > li:first-child .button {
       border-left: 0; }
-    @media only screen and (max-width: 24em) {
+    @media only screen and (max-width: 36em) {
       .button-group.stack-for-small > li {
         margin: 0 -2px;
         float: none;
@@ -1514,7 +1514,7 @@ button::-moz-focus-inner {
       -webkit-bottom-right-radius: 4px;
       border-bottom-left-radius: 4px;
       border-bottom-right-radius: 4px; }
-  @media only screen and (min-width:24.063em) {
+  @media only screen and (min-width:36.063em) {
     .button-group.radius.stack-for-small > * {
       margin: 0 -2px;
       float: none;
@@ -1536,7 +1536,7 @@ button::-moz-focus-inner {
         -webkit-border-top-right-radius: 4px;
         border-bottom-right-radius: 4px;
         border-top-right-radius: 4px; } }
-  @media only screen and (max-width: 24em) {
+  @media only screen and (max-width: 36em) {
     .button-group.radius.stack-for-small > * {
       margin: 0 -2px;
       float: none;
@@ -1620,7 +1620,7 @@ button::-moz-focus-inner {
       -webkit-bottom-right-radius: 1rem;
       border-bottom-left-radius: 1rem;
       border-bottom-right-radius: 1rem; }
-  @media only screen and (min-width:24.063em) {
+  @media only screen and (min-width:36.063em) {
     .button-group.round.stack-for-small > * {
       margin: 0 -2px;
       float: none;
@@ -1642,7 +1642,7 @@ button::-moz-focus-inner {
         -webkit-border-top-right-radius: 1000px;
         border-bottom-right-radius: 1000px;
         border-top-right-radius: 1000px; } }
-  @media only screen and (max-width: 24em) {
+  @media only screen and (max-width: 36em) {
     .button-group.round.stack-for-small > * {
       margin: 0 -2px;
       float: none;
@@ -1856,7 +1856,7 @@ button::-moz-focus-inner {
   .clearing-feature li.clearing-featured-img {
     display: block; }
 
-@media only screen and (min-width:24.063em) {
+@media only screen and (min-width:36.063em) {
   .clearing-main-prev, .clearing-main-next {
     position: absolute;
     height: 100%;
@@ -2582,7 +2582,7 @@ label.error {
       width: auto;
       margin: auto;
       float: none; }
-  @media only screen and (min-width:24.063em) {
+  @media only screen and (min-width:36.063em) {
     .icon-bar.medium-vertical {
       height: 100%;
       width: auto; }
@@ -2590,7 +2590,7 @@ label.error {
         width: auto;
         margin: auto;
         float: none; } }
-  @media only screen and (min-width:48.063em) {
+  @media only screen and (min-width:50.063em) {
     .icon-bar.large-vertical {
       height: 100%;
       width: auto; }
@@ -2619,50 +2619,50 @@ label.error {
   width: 50%; }
 .icon-bar.two-up.vertical .item, .icon-bar.two-up.small-vertical .item {
   width: auto; }
-@media only screen and (min-width:24.063em) {
+@media only screen and (min-width:36.063em) {
   .icon-bar.two-up.medium-vertical .item {
     width: auto; } }
-@media only screen and (min-width:48.063em) {
+@media only screen and (min-width:50.063em) {
   .icon-bar.two-up.large-vertical .item {
     width: auto; } }
 .icon-bar.three-up .item {
   width: 33.3333%; }
 .icon-bar.three-up.vertical .item, .icon-bar.three-up.small-vertical .item {
   width: auto; }
-@media only screen and (min-width:24.063em) {
+@media only screen and (min-width:36.063em) {
   .icon-bar.three-up.medium-vertical .item {
     width: auto; } }
-@media only screen and (min-width:48.063em) {
+@media only screen and (min-width:50.063em) {
   .icon-bar.three-up.large-vertical .item {
     width: auto; } }
 .icon-bar.four-up .item {
   width: 25%; }
 .icon-bar.four-up.vertical .item, .icon-bar.four-up.small-vertical .item {
   width: auto; }
-@media only screen and (min-width:24.063em) {
+@media only screen and (min-width:36.063em) {
   .icon-bar.four-up.medium-vertical .item {
     width: auto; } }
-@media only screen and (min-width:48.063em) {
+@media only screen and (min-width:50.063em) {
   .icon-bar.four-up.large-vertical .item {
     width: auto; } }
 .icon-bar.five-up .item {
   width: 20%; }
 .icon-bar.five-up.vertical .item, .icon-bar.five-up.small-vertical .item {
   width: auto; }
-@media only screen and (min-width:24.063em) {
+@media only screen and (min-width:36.063em) {
   .icon-bar.five-up.medium-vertical .item {
     width: auto; } }
-@media only screen and (min-width:48.063em) {
+@media only screen and (min-width:50.063em) {
   .icon-bar.five-up.large-vertical .item {
     width: auto; } }
 .icon-bar.six-up .item {
   width: 16.66667%; }
 .icon-bar.six-up.vertical .item, .icon-bar.six-up.small-vertical .item {
   width: auto; }
-@media only screen and (min-width:24.063em) {
+@media only screen and (min-width:36.063em) {
   .icon-bar.six-up.medium-vertical .item {
     width: auto; } }
-@media only screen and (min-width:48.063em) {
+@media only screen and (min-width:50.063em) {
   .icon-bar.six-up.large-vertical .item {
     width: auto; } }
 
@@ -2804,7 +2804,7 @@ label.error {
   left: 0; }
 
 /* Styles for screens that are at least 768px; */
-@media only screen and (min-width:24.063em) {
+@media only screen and (min-width:36.063em) {
   .joyride-tip-guide {
     width: 300px;
     left: inherit; }
@@ -3097,13 +3097,13 @@ label.error {
 .touch .orbit-bullets {
   display: none; }
 
-@media only screen and (min-width:24.063em) {
+@media only screen and (min-width:36.063em) {
   .touch .orbit-container .orbit-prev, .touch .orbit-container .orbit-next {
     display: inherit; }
   .touch .orbit-bullets {
     display: block; } }
 
-@media only screen and (max-width: 24em) {
+@media only screen and (max-width: 36em) {
   .orbit-stack-on-small .orbit-slides-container {
     height: auto !important; }
   .orbit-stack-on-small .orbit-slides-container > * {
@@ -3388,7 +3388,7 @@ ul.pagination {
   border: solid 1px #666666;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   padding: 1.875rem; }
-  @media only screen and (max-width: 24em) {
+  @media only screen and (max-width: 36em) {
     .reveal-modal {
       min-height: 100vh; } }
   .reveal-modal .column, .reveal-modal dialog, .reveal-modal .columns, .reveal-modal dialog {
@@ -3397,14 +3397,14 @@ ul.pagination {
     margin-top: 0; }
   .reveal-modal > :last-child, .reveal-modal > dialog {
     margin-bottom: 0; }
-  @media only screen and (min-width:24.063em) {
+  @media only screen and (min-width:36.063em) {
     .reveal-modal {
       width: 80%;
       max-width: 71.25rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
-  @media only screen and (min-width:24.063em) {
+  @media only screen and (min-width:36.063em) {
     .reveal-modal {
       top: 6.25rem; } }
   .reveal-modal.radius, dialog.radius {
@@ -3413,35 +3413,35 @@ ul.pagination {
     border-radius: 1000px; }
   .reveal-modal.collapse, dialog.collapse {
     padding: 0; }
-  @media only screen and (min-width:24.063em) {
+  @media only screen and (min-width:36.063em) {
     .reveal-modal.tiny {
       width: 30%;
       max-width: 71.25rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
-  @media only screen and (min-width:24.063em) {
+  @media only screen and (min-width:36.063em) {
     .reveal-modal.small {
       width: 40%;
       max-width: 71.25rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
-  @media only screen and (min-width:24.063em) {
+  @media only screen and (min-width:36.063em) {
     .reveal-modal.medium {
       width: 60%;
       max-width: 71.25rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
-  @media only screen and (min-width:24.063em) {
+  @media only screen and (min-width:36.063em) {
     .reveal-modal.large {
       width: 70%;
       max-width: 71.25rem;
       left: 0;
       right: 0;
       margin: 0 auto; } }
-  @media only screen and (min-width:24.063em) {
+  @media only screen and (min-width:36.063em) {
     .reveal-modal.xlarge {
       width: 95%;
       max-width: 71.25rem;
@@ -3455,7 +3455,7 @@ ul.pagination {
     height: 100vh;
     min-height: 100vh;
     margin-left: 0 !important; }
-    @media only screen and (min-width:24.063em) {
+    @media only screen and (min-width:36.063em) {
       .reveal-modal.full {
         width: 100vw;
         max-width: 71.25rem;
@@ -3786,7 +3786,7 @@ table {
 .text-justify {
   text-align: justify !important; }
 
-@media only screen and (max-width: 24em) {
+@media only screen and (max-width: 36em) {
   .small-only-text-left {
     text-align: left !important; }
   .small-only-text-right {
@@ -3806,7 +3806,7 @@ table {
   .small-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:24.063em) and (max-width:48em) {
+@media only screen and (min-width:36.063em) and (max-width:50em) {
   .medium-only-text-left {
     text-align: left !important; }
   .medium-only-text-right {
@@ -3816,7 +3816,7 @@ table {
   .medium-only-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:24.063em) {
+@media only screen and (min-width:36.063em) {
   .medium-text-left {
     text-align: left !important; }
   .medium-text-right {
@@ -3826,7 +3826,7 @@ table {
   .medium-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:48.063em) and (max-width:64em) {
+@media only screen and (min-width:50.063em) and (max-width:64em) {
   .large-only-text-left {
     text-align: left !important; }
   .large-only-text-right {
@@ -3836,7 +3836,7 @@ table {
   .large-only-text-justify {
     text-align: justify !important; } }
 
-@media only screen and (min-width:48.063em) {
+@media only screen and (min-width:50.063em) {
   .large-text-left {
     text-align: left !important; }
   .large-text-right {
@@ -4087,7 +4087,7 @@ blockquote, blockquote p {
   border: none;
   padding: 0 0.0625rem; }
 
-@media only screen and (min-width:24.063em) {
+@media only screen and (min-width:36.063em) {
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.3; }
   h1 {
@@ -4218,7 +4218,7 @@ blockquote, blockquote p {
     .tabs-content.vertical > .content {
       padding: 0 0.9375rem; }
 
-@media only screen and (min-width:24.063em) {
+@media only screen and (min-width:36.063em) {
   .tabs.vertical {
     width: 20%;
     max-width: 20%;
@@ -4302,7 +4302,7 @@ blockquote, blockquote p {
   color: #777777;
   font-weight: normal; }
 
-@media only screen and (min-width:24.063em) {
+@media only screen and (min-width:36.063em) {
   .tooltip > .nub {
     border-color: transparent transparent #333333 transparent;
     top: -10px; }
@@ -4326,8 +4326,8 @@ blockquote, blockquote p {
     margin-top: -5px; } }
 
 meta.foundation-mq-topbar {
-  font-family: "/only screen and (min-width:24.063em)/";
-  width: 24.063em; }
+  font-family: "/only screen and (min-width:36.063em)/";
+  width: 36.063em; }
 
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
@@ -4379,7 +4379,7 @@ meta.foundation-mq-topbar {
     padding-bottom: 0.4125rem;
     margin-bottom: 0;
     font-size: 0.75rem; }
-    @media only screen and (max-width: 24em) {
+    @media only screen and (max-width: 36em) {
       .top-bar .button, .top-bar button {
         position: relative;
         top: -1px; } }
@@ -4627,7 +4627,7 @@ meta.foundation-mq-topbar {
 .js-generated {
   display: block; }
 
-@media only screen and (min-width:24.063em) {
+@media only screen and (min-width:36.063em) {
   .top-bar {
     background: #333333;
     overflow: visible; }
@@ -4856,7 +4856,7 @@ meta.foundation-mq-topbar {
   text-align: center;
   height: 2.8125rem;
   top: 0; }
-  @media only screen and (min-width:24.063em) {
+  @media only screen and (min-width:36.063em) {
     .tab-bar-section.left, .tab-bar-section.right {
       text-align: left; } }
   .tab-bar-section.left {
@@ -4984,7 +4984,7 @@ ul.off-canvas-list {
   right: 0;
   z-index: 1002;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-  @media only screen and (min-width:24.063em) {
+  @media only screen and (min-width:36.063em) {
     .move-right .exit-off-canvas:hover {
       background: rgba(255, 255, 255, 0.05); } }
 
@@ -5009,7 +5009,7 @@ ul.off-canvas-list {
   right: 0;
   z-index: 1002;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-  @media only screen and (min-width:24.063em) {
+  @media only screen and (min-width:36.063em) {
     .move-left .exit-off-canvas:hover {
       background: rgba(255, 255, 255, 0.05); } }
 
@@ -5034,7 +5034,7 @@ ul.off-canvas-list {
   right: 0;
   z-index: 1002;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-  @media only screen and (min-width:24.063em) {
+  @media only screen and (min-width:36.063em) {
     .offcanvas-overlap .exit-off-canvas:hover {
       background: rgba(255, 255, 255, 0.05); } }
 
@@ -5059,7 +5059,7 @@ ul.off-canvas-list {
   right: 0;
   z-index: 1002;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-  @media only screen and (min-width:24.063em) {
+  @media only screen and (min-width:36.063em) {
     .offcanvas-overlap-left .exit-off-canvas:hover {
       background: rgba(255, 255, 255, 0.05); } }
 
@@ -5084,7 +5084,7 @@ ul.off-canvas-list {
   right: 0;
   z-index: 1002;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
-  @media only screen and (min-width:24.063em) {
+  @media only screen and (min-width:36.063em) {
     .offcanvas-overlap-right .exit-off-canvas:hover {
       background: rgba(255, 255, 255, 0.05); } }
 
@@ -5241,7 +5241,7 @@ ul.off-canvas-list {
     display: table-cell !important; } }
 
 /* medium displays */
-@media only screen and (min-width:24.063em) {
+@media only screen and (min-width:36.063em) {
   .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .show-for-medium-only, .show-for-medium-up, .show-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xxlarge-only, .hide-for-xxlarge-up {
     display: inherit !important; }
   .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .hide-for-medium-only, .hide-for-medium-up, .hide-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xxlarge-only, .show-for-xxlarge-up {
@@ -5270,7 +5270,7 @@ ul.off-canvas-list {
     display: table-cell !important; } }
 
 /* large displays */
-@media only screen and (min-width:48.063em) {
+@media only screen and (min-width:50.063em) {
   .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xxlarge-only, .hide-for-xxlarge-up {
     display: inherit !important; }
   .show-for-small-only, .hide-for-small-up, .show-for-small, .show-for-small-down, .show-for-medium-only, .hide-for-medium-up, .show-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xxlarge-only, .show-for-xxlarge-up {
