@@ -8,12 +8,13 @@ module.exports = function(grunt) {
       },
       dist: {
         options: {
-          outputStyle: 'compressed'
+          outputStyle: 'expanded',
+          lineNumbers: 'true'
         },
         files: {
           'css/app.css': 'scss/app.scss',
           'css/style.css': 'scss/style.scss'
-        }        
+        }
       }
     },
 

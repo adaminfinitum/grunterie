@@ -4,7 +4,7 @@
  * http://themefortress.com/reverie */
 
 // import normalize, stay at top
-// @import "normalize";
+@import "normalize";
 
 // Global Foundation Settings
 @import "settings";
@@ -16,9 +16,9 @@
 // @import "foundation";
 
 // Load some Compass magic, note you will need to install Compass first
-//@import "compass/css3/shared";
-//@import "compass/css3/border-radius";
-//@import "compass/css3/transition";
+@import "compass/css3/shared";
+@import "compass/css3/border-radius";
+@import "compass/css3/transition";
 
 /* Start to customize Reverie */
 
@@ -48,7 +48,7 @@ img.alignright {
 	float: right;
 	margin: 0 0 18px 18px;
 }
-	
+
 img.alignleft {
 	float: left;
 	margin: 0 18px 18px 0;
@@ -225,7 +225,7 @@ ol.commentlist {
 	li {
 		list-style: none;
 		margin-bottom: 2em;
-	
+
 		.comment-author img {
 			float: left;
 			margin: 0 1em 0 0;
