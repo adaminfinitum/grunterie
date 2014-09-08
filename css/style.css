@@ -660,7 +660,7 @@ ol.commentlist {
   background-color: #eee;
   padding: 1.5rem 1.875rem; }
   #sidebar .panel a, .footer-widget .panel a {
-    color: #999;
+    color: #666;
     font-size: 0.9375rem; }
     #sidebar .panel a:hover, #sidebar .panel a:focus, .footer-widget .panel a:hover, .footer-widget .panel a:focus {
       color: #333; }
@@ -678,7 +678,10 @@ ol.commentlist {
 footer.full-width {
   background-color: #fff;
   border-top: 1px solid #ccc;
-  padding-top: 3rem; }
+  padding-top: 2.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem; }
   footer.full-width p {
     font-size: 0.875rem; }
   footer.full-width a {

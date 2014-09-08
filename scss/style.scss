@@ -275,7 +275,7 @@ ol.commentlist {
 		background-color: #eee;
 		padding: rem-calc(24) rem-calc(30);
 		a {
-			color: #999;
+			color: #666;
 			font-size: rem-calc(15);
 			&:hover, &:focus {
 				color: $body-font-color;
@@ -302,7 +302,10 @@ ol.commentlist {
 footer.full-width {
 	background-color: #fff;
 	border-top: 1px solid #ccc;
-	padding-top: rem-calc(48);
+	padding-top: rem-calc(36);
+	padding-left: rem-calc(16);
+	padding-right: rem-calc(16);
+	padding-bottom: rem-calc(16);
 	p {
 		font-size: rem-calc(14);
 	}

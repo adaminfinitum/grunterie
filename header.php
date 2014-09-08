@@ -23,6 +23,7 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class('antialiased'); ?>>
+<?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
 <header class="contain-to-grid">
 	<!-- Starting the Top-Bar -->
 	<nav class="top-bar" data-topbar>
