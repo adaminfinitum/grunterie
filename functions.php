@@ -37,6 +37,11 @@ require_once('lib/nav.php'); // filter default wordpress menu classes and clean 
 */
 require_once('lib/presstrends.php'); // load PressTrends to track the usage of Reverie across the web, comment this line if you don't want to be tracked
 
+
+require_once('lib/relative-urls.php');   // Root relative URLs
+
+
+
 /****************************************
 Require Plugins
 *****************************************/
@@ -63,6 +68,9 @@ if( ! function_exists( 'reverie_theme_support' ) ) {
 
         // rss thingy
         add_theme_support('automatic-feed-links');
+
+        // Enable relative URLs
+        add_theme_support('root-relative-urls');
 
         // Add post formats support. http://codex.wordpress.org/Post_Formats
         add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));

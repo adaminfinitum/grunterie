@@ -11,14 +11,14 @@ function reverie_register_required_plugins() {
 			'name' 				=> 'WordPress SEO by Yoast',
 			'slug' 				=> 'wordpress-seo',
 			'required' 			=> true,
-			'force_activation'	=> true
+			'force_activation'	=> false
 		),
 
 		array(
 			'name' 				=> 'Use Google Libraries',
 			'slug' 				=> 'use-google-libraries',
 			'required' 			=> true,
-			'force_activation'	=> true
+			'force_activation'	=> false
 		),
 
 		array(
@@ -31,7 +31,7 @@ function reverie_register_required_plugins() {
 			'name' 				=> 'Better WP Security',
 			'slug' 				=> 'better-wp-security',
 			'required' 			=> true,
-			'force_activation'	=> true
+			'force_activation'	=> false
 		),
 		array(
 			'name' 				=> 'WP Backitup',

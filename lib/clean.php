@@ -25,7 +25,7 @@ if( ! function_exists( 'reverie_startup ' ) ) {
 	    add_action('wp_enqueue_scripts', 'reverie_scripts_and_styles', 999);
 	    // ie conditional wrapper
 	    add_filter( 'style_loader_tag', 'reverie_ie_conditional', 10, 2 );
-	    
+
 	    // additional post related cleaning
 	    add_filter( 'img_caption_shortcode', 'reverie_cleaner_caption', 10, 3 );
 	    add_filter('get_image_tag_class', 'reverie_image_tag_class', 0, 4);
@@ -65,6 +65,8 @@ if( ! function_exists( 'reverie_head_cleanup ' ) ) {
 		remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
 		// WP version
 		remove_action( 'wp_head', 'wp_generator' );
+		// shortlink
+		remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0);
 	  // remove WP version from css
 	  add_filter( 'style_loader_src', 'reverie_remove_wp_ver_css_js', 9999 );
 	  // remove Wp version from scripts
@@ -126,20 +128,22 @@ if( ! function_exists( 'reverie_scripts_and_styles ' ) ) {
 	    wp_register_script( 'reverie-modernizr', get_template_directory_uri() . '/js/modernizr.min.js', array(), '2.6.2', false );
 
 	    // register Google font
-	    wp_register_style('google-font', 'http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Lora:400,700|Droid+Sans+Mono');
+	    wp_register_style('google-font', '//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Droid+Sans+Mono');
 
 	    // ie-only style sheet
 	    wp_register_style( 'reverie-ie-only', get_template_directory_uri() . '/css/ie.css', array(), '' );
 
 	    // comment reply script for threaded comments
 	    if( get_option( 'thread_comments' ) )  { wp_enqueue_script( 'comment-reply' ); }
-	    
+
 	    // adding Foundation scripts file in the footer
 	    wp_register_script( 'reverie-js', get_template_directory_uri() . '/js/foundation.min.js', array( 'jquery' ), '', true );
-	    
+
+
+	    // load html5 shiv from CDN as the common google link isn't served with gzip
 	    global $is_IE;
 	    if ($is_IE) {
-	       wp_register_script ( 'html5shiv', "http://html5shiv.googlecode.com/svn/trunk/html5.js" , false, true);
+	       wp_register_script ( 'html5shiv', "//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" , false, true);
 	    }
 
 	    // enqueue styles and scripts
@@ -152,7 +156,7 @@ if( ! function_exists( 'reverie_scripts_and_styles ' ) ) {
 	    and your site will load faster.
 	    */
 	    wp_enqueue_script( 'jquery' );
-		
+
 	    wp_enqueue_script( 'reverie-js' );
 	    wp_enqueue_script( 'html5shiv' );
 
@@ -213,7 +217,7 @@ if( ! function_exists( 'reverie_cleaner_caption ' ) ) {
 
 		/* Return the formatted, clean caption. */
 		return $output;
-		
+
 	} /* end reverie_cleaner_caption */
 }
 
@@ -250,4 +254,81 @@ if( ! function_exists( 'reverie_img_unautop ' ) ) {
 	    return $pee;
 	} /* end reverie_img_unautop */
 }
+
+
+// From roots.io
+
+/**
+ * Manage output of wp_title()
+ */
+function reverie_wp_title($title) {
+  if (is_feed()) {
+    return $title;
+  }
+
+  $title .= get_bloginfo('name');
+
+  return $title;
+}
+add_filter('wp_title', 'reverie_wp_title', 10);
+
+/**
+ * Clean up output of stylesheet <link> tags
+ */
+function reverie_clean_style_tag($input) {
+  preg_match_all("!<link rel='stylesheet'\s?(id='[^']+')?\s+href='(.*)' type='text/css' media='(.*)' />!", $input, $matches);
+  // Only display media if it is meaningful
+  $media = $matches[3][0] !== '' && $matches[3][0] !== 'all' ? ' media="' . $matches[3][0] . '"' : '';
+  return '<link rel="stylesheet" href="' . $matches[2][0] . '"' . $media . '>' . "\n";
+}
+add_filter('style_loader_tag', 'reverie_clean_style_tag');
+
+/**
+ * Add and remove body_class() classes
+ */
+function reverie_body_class($classes) {
+  // Add post/page slug
+  if (is_single() || is_page() && !is_front_page()) {
+    $classes[] = basename(get_permalink());
+  }
+
+  // Remove unnecessary classes
+  $home_id_class = 'page-id-' . get_option('page_on_front');
+  $remove_classes = array(
+    'page-template-default',
+    $home_id_class
+  );
+  $classes = array_diff($classes, $remove_classes);
+
+  return $classes;
+}
+add_filter('body_class', 'reverie_body_class');
+
+/**
+ * Clean up the_excerpt()
+ */
+function reverie_excerpt_length($length) {
+  return POST_EXCERPT_LENGTH;
+}
+
+function reverie_excerpt_more($more) {
+  return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'reverie') . '</a>';
+}
+add_filter('excerpt_length', 'reverie_excerpt_length');
+add_filter('excerpt_more', 'reverie_excerpt_more');
+
+/**
+ * Remove unnecessary self-closing tags
+ */
+function reverie_remove_self_closing_tags($input) {
+  return str_replace(' />', '>', $input);
+}
+add_filter('get_avatar',          'reverie_remove_self_closing_tags'); // <img />
+add_filter('comment_id_fields',   'reverie_remove_self_closing_tags'); // <input />
+add_filter('post_thumbnail_html', 'reverie_remove_self_closing_tags'); // <img />
+
+
+
+
+
 ?>
