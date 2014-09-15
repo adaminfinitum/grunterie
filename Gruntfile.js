@@ -60,7 +60,7 @@ module.exports = function(grunt) {
     watch: {
       grunt: {
         files: ['Gruntfile.js', 'scss/**', 'css/**', 'js/**'],
-        tasks: ['compass', 'jshint:grunt'],
+        tasks: ['compass:dist', 'jshint:grunt'],
         options: {
           livereload: true,
         },
@@ -94,6 +94,20 @@ module.exports = function(grunt) {
             'bower_components/foundation/scss'
           ]
         }
+      },
+      prod: {
+        options: {
+          sassDir: 'scss',
+          cssDir: 'css',
+          output: 'compact',
+          javascriptsDir: 'js',
+          fontsDir: 'fonts',
+          imagesDir: 'img',
+          noLineComments: true,
+          importPath: [
+            'bower_components/foundation/scss'
+          ]
+        }
       }
     },
   });
@@ -115,7 +129,10 @@ module.exports = function(grunt) {
   /*
    * Uncomment to use compass:
    */
-  grunt.registerTask('build', ['compass', 'jshint:grunt', 'uglify','copy']);
+  grunt.registerTask('build', ['compass:dist', 'jshint:grunt', 'uglify','copy']);
 
   grunt.registerTask('default', ['build','watch']);
+
+  grunt.registerTask('prod', ['compass:prod','jshint:all', 'uglify', 'copy']);
+
 };
