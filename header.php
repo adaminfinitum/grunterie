@@ -22,11 +22,11 @@
 	<link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-load.png" media="screen and (max-device-width: 320px)" />
 <?php wp_head(); ?>
 </head>
-<body <?php body_class('antialiased'); ?>>
+<body <?php body_class('antialiased'); ?> itemscope="itemscope" itemtype="http://schema.org/WebPage">
 <?php if ( function_exists( 'gtm4wp_the_gtm_tag' ) ) { gtm4wp_the_gtm_tag(); } ?>
-<header class="contain-to-grid">
+<header class="contain-to-grid" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
 	<!-- Starting the Top-Bar -->
-	<nav class="top-bar" data-topbar>
+	<nav class="top-bar" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" data-topbar>
 	    <ul class="title-area">
 	        <li class="name">
 	        	<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -40,7 +40,7 @@
 	            'theme_location' => 'primary',
 	            'container' => false,
 	            'depth' => 0,
-	            'items_wrap' => '<ul class="left">%3$s</ul>',
+	            'items_wrap' => '<ul class="right">%3$s</ul>',
 	            'fallback_cb' => 'reverie_menu_fallback', // workaround to show a message to set up a menu
 	            'walker' => new reverie_walker( array(
 	                'in_top_bar' => true,
@@ -56,7 +56,7 @@
 	            'theme_location' => 'additional',
 	            'container' => false,
 	            'depth' => 0,
-	            'items_wrap' => '<ul class="right">%3$s</ul>',
+	            'items_wrap' => '<ul class="left">%3$s</ul>',
 	            'walker' => new reverie_walker( array(
 	                'in_top_bar' => true,
 	                'item_type' => 'li',

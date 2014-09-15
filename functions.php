@@ -37,6 +37,15 @@ require_once('lib/nav.php'); // filter default wordpress menu classes and clean 
 */
 require_once('lib/presstrends.php'); // load PressTrends to track the usage of Reverie across the web, comment this line if you don't want to be tracked
 
+/****************************************
+Require Plugins
+*****************************************/
+
+require_once( get_template_directory() . '/lib/class-tgm-plugin-activation.php' );
+require_once( get_template_directory() . '/lib/theme-require-plugins.php' );
+
+add_action( 'tgmpa_register', 'reverie_register_required_plugins' );
+
 /**********************
 Add theme supports
  **********************/
