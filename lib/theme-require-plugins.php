@@ -10,93 +10,93 @@ function reverie_register_required_plugins() {
 		array(
 			'name' 				=> 'WordPress SEO by Yoast',
 			'slug' 				=> 'wordpress-seo',
-			'required' 			=> true,
+			'required' 			=> false,
 			'force_activation'	=> false
 		),
 
 		array(
 			'name' 				=> 'Use Google Libraries',
 			'slug' 				=> 'use-google-libraries',
-			'required' 			=> true,
+			'required' 			=> false,
 			'force_activation'	=> false
 		),
 
 		array(
 			'name' 				=> 'Pods - Custom Content Types and Fields',
 			'slug' 				=> 'pods',
-			'required' 			=> true,
+			'required' 			=> false,
 			'force_activation'	=> false
 		),
 		array(
 			'name' 				=> 'Better WP Security',
 			'slug' 				=> 'better-wp-security',
-			'required' 			=> true,
+			'required' 			=> false,
 			'force_activation'	=> false
 		),
 		array(
 			'name' 				=> 'WP Backitup',
 			'slug' 				=> 'wp-backitup',
-			'required' 			=> true,
+			'required' 			=> false,
 			'force_activation'	=> false
 		),
 		array(
 			'name' 				=> 'Display Widgets',
 			'slug' 				=> 'display-widgets',
-			'required' 			=> true,
+			'required' 			=> false,
 			'force_activation'	=> false
 		),
 		array(
 			'name' 				=> 'Yet Another Related Posts Plugin',
 			'slug' 				=> 'yet-another-related-posts-plugin',
-			'required' 			=> true,
+			'required' 			=> false,
 			'force_activation'	=> false
 		),
 		array(
 			'name' 				=> 'Dont Muck My Markup',
 			'slug' 				=> 'dont-muck-my-markup',
-			'required' 			=> true,
+			'required' 			=> false,
 			'force_activation'	=> false
 		),
 		array(
 			'name' 				=> 'Google Tag Manager for WordPress',
 			'slug' 				=> 'duracelltomi-google-tag-manager',
-			'required' 			=> true,
+			'required' 			=> false,
 			'force_activation'	=> false
 		),
 		array(
 			'name' 				=> 'Ninja Forms',
 			'slug' 				=> 'ninja-forms',
-			'required' 			=> true,
+			'required' 			=> false,
 			'force_activation'	=> false
 		),
 		array(
 			'name' 				=> 'Piklist',
 			'slug' 				=> 'piklist',
-			'required' 			=> true,
+			'required' 			=> false,
 			'force_activation'	=> false
 		),
 		array(
 			'name' 				=> 'Sock Em Spambots',
 			'slug' 				=> 'sockem-spambots',
-			'required' 			=> true,
+			'required' 			=> false,
 			'force_activation'	=> false
 		),
 		array(
 			'name' 				=> 'WordPress Helpers',
 			'slug' 				=> 'wp-helpers',
-			'required' 			=> true,
+			'required' 			=> false,
 			'force_activation'	=> false
 		),
 		array(
 			'name' 				=> 'W3 Total Cache',
 			'slug' 				=> 'w3-total-cache',
-			'required' 			=> true,
+			'required' 			=> false,
 			'force_activation'	=> false
 		),
 		array(
 			'name' 				=> 'Search Everything',
 			'slug' 				=> 'search-everything',
-			'required' 			=> true,
+			'required' 			=> false,
 			'force_activation'	=> false
 		),
 
@@ -118,7 +118,7 @@ function reverie_register_required_plugins() {
 		'parent_menu_slug' 	=> 'themes.php', 				// Default parent menu slug
 		'parent_url_slug' 	=> 'themes.php', 				// Default parent URL slug
 		'menu'         		=> 'install-required-plugins', 	// Menu slug
-		'has_notices'      	=> true,                       	// Show admin notices or not
+		'has_notices'      	=> false,                       	// Show admin notices or not
 		'is_automatic'    	=> false,					   	// Automatically activate plugins after installation or not
 		'message' 			=> '',							// Message to output right before the plugins table
 		'strings'      		=> array(
