@@ -305,14 +305,11 @@ function reverie_body_class($classes) {
 add_filter('body_class', 'reverie_body_class');
 
 /**
- * Clean up the_excerpt()
+ * Customize 'Read More' Link
  */
-function reverie_excerpt_length($length) {
-  return POST_EXCERPT_LENGTH;
-}
 
 function reverie_excerpt_more($more) {
-  return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'reverie') . '</a>';
+  return ' &hellip; <a href="' . get_permalink() . '">' . __('Rest of Post', 'reverie') . '</a>';
 }
 add_filter('excerpt_length', 'reverie_excerpt_length');
 add_filter('excerpt_more', 'reverie_excerpt_more');
@@ -326,9 +323,5 @@ function reverie_remove_self_closing_tags($input) {
 add_filter('get_avatar',          'reverie_remove_self_closing_tags'); // <img />
 add_filter('comment_id_fields',   'reverie_remove_self_closing_tags'); // <input />
 add_filter('post_thumbnail_html', 'reverie_remove_self_closing_tags'); // <img />
-
-
-
-
 
 ?>
