@@ -311,7 +311,6 @@ add_filter('body_class', 'reverie_body_class');
 function reverie_excerpt_more($more) {
   return ' &hellip; <a href="' . get_permalink() . '">' . __('Rest of Post', 'reverie') . '</a>';
 }
-add_filter('excerpt_length', 'reverie_excerpt_length');
 add_filter('excerpt_more', 'reverie_excerpt_more');
 
 /**
