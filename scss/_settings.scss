@@ -79,7 +79,7 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-grid-classes: $include-html-classes;
 // $include-xl-html-grid-classes: false;
 
-$row-width: rem-calc(1140);
+$row-width: rem-calc(1020);
 // $total-columns: 12;
 // $column-gutter: rem-calc(30);
 
@@ -138,7 +138,7 @@ $body-font-family: 'Open Sans', sans-serif;
 
 // We use these to make sure border radius matches unless we want it different.
 $global-radius: 4px;
-$global-rounded: 1140px;
+$global-rounded: 1020px;
 
 // We use these to control inset shadow shiny edges and depressions.
 // $shiny-edge-size: 0 1px 0;
@@ -192,9 +192,8 @@ $xxlarge-range: (90.063em, 99999999em);
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family;
-// $header-font-weight: $font-weight-normal;
-$light-header-font-weight: 300;
+$header-font-family: Oswald;
+// $header-font-weight: $body-font-weight;
 // $header-font-style: normal;
 $header-font-color: #222;
 $header-line-height: 1.3;
@@ -211,23 +210,23 @@ $h5-font-size: rem-calc(20);
 // $h6-font-size: 1rem;
 
 // We use these to control header size reduction on small screens
-// $h1-font-reduction: rem-calc(10) !default;
-// $h2-font-reduction: rem-calc(10) !default;
-// $h3-font-reduction: rem-calc(5) !default;
-// $h4-font-reduction: rem-calc(5) !default;
-// $h5-font-reduction: 0 !default;
+$h1-font-reduction: rem-calc(6) !default;
+$h2-font-reduction: rem-calc(4) !default;
+$h3-font-reduction: rem-calc(4) !default;
+$h4-font-reduction: rem-calc(2) !default;
+$h5-font-reduction: rem-calc(2) !default;
 // $h6-font-reduction: 0 !default;
 
 // These control how subheaders are styled.
 $subheader-line-height: 1.3;
-$subheader-font-color: scale-color($header-font-color, $lightness: 30%);
-$subheader-font-weight: $light-header-font-weight;
+$subheader-font-color: scale-color($header-font-color, $lightness: 20%);
+// $subheader-font-weight: $header-font-weight;
 // $subheader-top-margin: .2rem;
 // $subheader-bottom-margin: .5rem;
 
 // A general <small> styling
 $small-font-size: 80%;
-$small-font-color: scale-color($header-font-color, $lightness: 15%);
+$small-font-color: scale-color($header-font-color, $lightness: 10%);
 
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
@@ -242,8 +241,8 @@ $small-font-color: scale-color($header-font-color, $lightness: 15%);
 
 // We use these to style <code> tags
 // $code-color: $oil;
-// $code-font-family: Consolas, 'Liberation Mono', Courier, monospace;
-// $code-font-weight: $font-weight-normal;
+$code-font-family:'Source Code Pro', Courier, monospace;
+$code-font-weight: 600;
 // $code-background-color: scale-color($secondary-color, $lightness: 70%);
 // $code-border-size: 1px;
 // $code-border-style: solid;
@@ -1426,7 +1425,7 @@ $topbar-link-color-hover: #fff;
 // $topbar-divider-border-top: solid 1px scale-color($topbar-bg-color, $lightness: -50%);
 
 // Sticky Class
-// $topbar-sticky-class: ".sticky";
+$topbar-sticky-class: ".sticky-nav";
 // $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
 
 // 36. Visibility Classes
