@@ -1,15 +1,15 @@
 #Grunterie - Working with Foundation 5.4.3
 
-This is a customized fork of Grunterie is a WordPress theme based on [Reverie](http://themefortress.com/reverie/), a "versatile HTML5 responsive WordPress framework based on [ZURB's Foundation](http://foundation.zurb.com/)." Reverie is set up to use the Compass gem to compile SCSS. With this version of Grunterie you still use Compass but the compilation and watching is handled via Grunt.
+This is a customized fork of Grunterie is a WordPress theme based on [Reverie](http://themefortress.com/reverie/), a "versatile HTML5 responsive WordPress framework based on [ZURB's Foundation](http://foundation.zurb.com/)." Reverie is set up to use the Compass gem to compile SCSS. With this version of Grunterie you still use Compass but the compilation and watching is handled via Grunt (or Compass).
 
-It seems Foundation did really aniticipate anyone not wanting to use libsass but wanting to use Grunt...it's taken me dozens of hours to get a fully working copy; consider that a word of warning before you type `bower update`.
+It seems Foundation did not aniticipate anyone not wanting to use libsass but wanting to use Grunt...it's taken me _dozens of hours to get a fully working copy_; consider that a word of warning before you type `bower update`.
 
 You can always use Sass with a Compass project but not the other way around. Plus, there's some pretty slick stuff that Compass does and that "plays nice" with it like: the SCSS syntax snippets that the Colorzilla CSS3 gradient generator spits out and [Effeckt.css](http://h5bp.github.io/Effeckt.css/).
 
 I'm creating this for [my own website](http://www.adaminfinitum.com/) (so you can probably see it in action there) and as a starting point for client projects.
 
-Usese [Grunt](http://gruntjs.com/) for task automation and quality assurance but my primary concerns are actually performance (very few HTTP requests compared to the average WordPress site due to concatenation and minification of files).
- * Built with Foundation 5.4.3 (minor changes to color scheme and I adjusted some of the typography rules to be closer to the golden ratio)
+Uses [Grunt](http://gruntjs.com/) for task automation and quality assurance but my primary concerns are actually performance (very few HTTP requests compared to the average WordPress site due to concatenation and minification of files).
+ * Built with Foundation 5.4.3 (minor changes to size of layout, color scheme and typography rules. all are readily apparent when viewing `settings.scss`)
  * Includes all the great features in Reverie (Really, I didn't change much)
  * Ready out-of-the-box if you don't want to bother with SASS
  * Built using the instructions in the [Foundation docs](http://foundation.zurb.com/docs/sass.html)
@@ -19,7 +19,7 @@ Usese [Grunt](http://gruntjs.com/) for task automation and quality assurance but
  * Uses my favorite parts of the fantastic [Roots Theme](http://roots.io/)
  * Has functions that automatically download my favorite WordPress plugins
  * Includes WAI-Aria role attributes (helps accessiblity)
- * Added [Schema.org][http://schema.org/] semantic web markup
+ * Added [Schema.org](http://schema.org/) semantic web markup
 
 ## Requirements
 
