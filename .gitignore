@@ -51,8 +51,6 @@ wordpress/wp-content/themes/base/library/js/
 
 # CSS #
 ######################
-css/
-css/*.css
 wordpress/wp-content/themes/base/library/js/css/
 wordpress/wp-content/themes/base/library/js/css/*.css
 templates/css/*.css
@@ -60,8 +58,6 @@ templates/css/
 
 # REPO IGNORES #
 ######################
-bower_components/
-node_modules/
 sftp-config.json
 
 
