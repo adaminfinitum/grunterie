@@ -242,23 +242,23 @@ meta.foundation-mq-small {
 }
 
 meta.foundation-mq-medium {
-  font-family: "/only screen and (min-width:36.063em)/";
-  width: 36.063em;
+  font-family: "/only screen and (min-width:35.063em)/";
+  width: 35.063em;
 }
 
 meta.foundation-mq-large {
-  font-family: "/only screen and (min-width:50.063em)/";
-  width: 50.063em;
+  font-family: "/only screen and (min-width:53.063em)/";
+  width: 53.063em;
 }
 
 meta.foundation-mq-xlarge {
-  font-family: "/only screen and (min-width:64.063em)/";
-  width: 64.063em;
+  font-family: "/only screen and (min-width:80.063em)/";
+  width: 80.063em;
 }
 
 meta.foundation-mq-xxlarge {
-  font-family: "/only screen and (min-width:90.063em)/";
-  width: 90.063em;
+  font-family: "/only screen and (min-width:100.063em)/";
+  width: 100.063em;
 }
 
 meta.foundation-data-attribute-namespace {
@@ -710,7 +710,7 @@ select {
     float: right;
   }
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .medium-push-0 {
     position: relative;
     left: 0%;
@@ -1140,7 +1140,7 @@ select {
     left: auto;
   }
 }
-@media only screen and (min-width: 50.063em) {
+@media only screen and (min-width: 53.063em) {
   .large-push-0 {
     position: relative;
     left: 0%;
@@ -1822,7 +1822,7 @@ select {
     clear: both;
   }
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .medium-block-grid-1 > li {
     width: 100%;
     list-style: none;
@@ -1955,7 +1955,7 @@ select {
     clear: both;
   }
 }
-@media only screen and (min-width: 50.063em) {
+@media only screen and (min-width: 53.063em) {
   .large-block-grid-1 > li {
     width: 100%;
     list-style: none;
@@ -2387,7 +2387,7 @@ button::-moz-focus-inner {
   padding: 0;
 }
 
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   button, .button {
     display: inline-block;
   }
@@ -2452,7 +2452,7 @@ button::-moz-focus-inner {
 .button-group.stack-for-small > li:first-child button, .button-group.stack-for-small > li:first-child .button {
   border-left: 0;
 }
-@media only screen and (max-width: 36em) {
+@media only screen and (max-width: 35em) {
   .button-group.stack-for-small > li {
     margin: 0 -2px;
     float: none;
@@ -2544,7 +2544,7 @@ button::-moz-focus-inner {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .button-group.radius.stack-for-small > * {
     margin: 0 -2px;
     float: none;
@@ -2573,7 +2573,7 @@ button::-moz-focus-inner {
     border-top-right-radius: 4px;
   }
 }
-@media only screen and (max-width: 36em) {
+@media only screen and (max-width: 35em) {
   .button-group.radius.stack-for-small > * {
     margin: 0 -2px;
     float: none;
@@ -2680,7 +2680,7 @@ button::-moz-focus-inner {
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .button-group.round.stack-for-small > * {
     margin: 0 -2px;
     float: none;
@@ -2709,7 +2709,7 @@ button::-moz-focus-inner {
     border-top-right-radius: 1020px;
   }
 }
-@media only screen and (max-width: 36em) {
+@media only screen and (max-width: 35em) {
   .button-group.round.stack-for-small > * {
     margin: 0 -2px;
     float: none;
@@ -2982,7 +2982,7 @@ button::-moz-focus-inner {
   display: block;
 }
 
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .clearing-main-prev,
   .clearing-main-next {
     position: absolute;
@@ -4001,7 +4001,7 @@ label.error {
   margin: auto;
   float: none;
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .icon-bar.medium-vertical {
     height: 100%;
     width: auto;
@@ -4012,7 +4012,7 @@ label.error {
     float: none;
   }
 }
-@media only screen and (min-width: 50.063em) {
+@media only screen and (min-width: 53.063em) {
   .icon-bar.large-vertical {
     height: 100%;
     width: auto;
@@ -4053,12 +4053,12 @@ label.error {
 .icon-bar.two-up.vertical .item, .icon-bar.two-up.small-vertical .item {
   width: auto;
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .icon-bar.two-up.medium-vertical .item {
     width: auto;
   }
 }
-@media only screen and (min-width: 50.063em) {
+@media only screen and (min-width: 53.063em) {
   .icon-bar.two-up.large-vertical .item {
     width: auto;
   }
@@ -4069,12 +4069,12 @@ label.error {
 .icon-bar.three-up.vertical .item, .icon-bar.three-up.small-vertical .item {
   width: auto;
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .icon-bar.three-up.medium-vertical .item {
     width: auto;
   }
 }
-@media only screen and (min-width: 50.063em) {
+@media only screen and (min-width: 53.063em) {
   .icon-bar.three-up.large-vertical .item {
     width: auto;
   }
@@ -4085,12 +4085,12 @@ label.error {
 .icon-bar.four-up.vertical .item, .icon-bar.four-up.small-vertical .item {
   width: auto;
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .icon-bar.four-up.medium-vertical .item {
     width: auto;
   }
 }
-@media only screen and (min-width: 50.063em) {
+@media only screen and (min-width: 53.063em) {
   .icon-bar.four-up.large-vertical .item {
     width: auto;
   }
@@ -4101,12 +4101,12 @@ label.error {
 .icon-bar.five-up.vertical .item, .icon-bar.five-up.small-vertical .item {
   width: auto;
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .icon-bar.five-up.medium-vertical .item {
     width: auto;
   }
 }
-@media only screen and (min-width: 50.063em) {
+@media only screen and (min-width: 53.063em) {
   .icon-bar.five-up.large-vertical .item {
     width: auto;
   }
@@ -4117,12 +4117,12 @@ label.error {
 .icon-bar.six-up.vertical .item, .icon-bar.six-up.small-vertical .item {
   width: auto;
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .icon-bar.six-up.medium-vertical .item {
     width: auto;
   }
 }
-@media only screen and (min-width: 50.063em) {
+@media only screen and (min-width: 53.063em) {
   .icon-bar.six-up.large-vertical .item {
     width: auto;
   }
@@ -4294,7 +4294,7 @@ label.error {
 }
 
 /* Styles for screens that are at least 768px; */
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .joyride-tip-guide {
     width: 300px;
     left: inherit;
@@ -4656,7 +4656,7 @@ kbd {
   display: none;
 }
 
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .touch .orbit-container .orbit-prev,
   .touch .orbit-container .orbit-next {
     display: inherit;
@@ -4665,7 +4665,7 @@ kbd {
     display: block;
   }
 }
-@media only screen and (max-width: 36em) {
+@media only screen and (max-width: 35em) {
   .orbit-stack-on-small .orbit-slides-container {
     height: auto !important;
   }
@@ -5020,7 +5020,7 @@ ul.pagination li {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   padding: 1.875rem;
 }
-@media only screen and (max-width: 36em) {
+@media only screen and (max-width: 35em) {
   .reveal-modal, dialog {
     min-height: 100vh;
   }
@@ -5034,7 +5034,7 @@ ul.pagination li {
 .reveal-modal > :last-child, dialog > :last-child {
   margin-bottom: 0;
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .reveal-modal, dialog {
     width: 80%;
     max-width: 63.75rem;
@@ -5043,7 +5043,7 @@ ul.pagination li {
     margin: 0 auto;
   }
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .reveal-modal, dialog {
     top: 6.25rem;
   }
@@ -5057,7 +5057,7 @@ ul.pagination li {
 .reveal-modal.collapse, dialog.collapse {
   padding: 0;
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .reveal-modal.tiny, dialog.tiny {
     width: 30%;
     max-width: 63.75rem;
@@ -5066,7 +5066,7 @@ ul.pagination li {
     margin: 0 auto;
   }
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .reveal-modal.small, dialog.small {
     width: 40%;
     max-width: 63.75rem;
@@ -5075,7 +5075,7 @@ ul.pagination li {
     margin: 0 auto;
   }
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .reveal-modal.medium, dialog.medium {
     width: 60%;
     max-width: 63.75rem;
@@ -5084,7 +5084,7 @@ ul.pagination li {
     margin: 0 auto;
   }
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .reveal-modal.large, dialog.large {
     width: 70%;
     max-width: 63.75rem;
@@ -5093,7 +5093,7 @@ ul.pagination li {
     margin: 0 auto;
   }
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .reveal-modal.xlarge, dialog.xlarge {
     width: 95%;
     max-width: 63.75rem;
@@ -5110,7 +5110,7 @@ ul.pagination li {
   min-height: 100vh;
   margin-left: 0 !important;
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .reveal-modal.full, dialog.full {
     width: 100vw;
     max-width: 63.75rem;
@@ -5543,7 +5543,7 @@ table tr td {
   text-align: justify !important;
 }
 
-@media only screen and (max-width: 36em) {
+@media only screen and (max-width: 35em) {
   .small-only-text-left {
     text-align: left !important;
   }
@@ -5577,7 +5577,7 @@ table tr td {
     text-align: justify !important;
   }
 }
-@media only screen and (min-width: 36.063em) and (max-width: 50em) {
+@media only screen and (min-width: 35.063em) and (max-width: 53em) {
   .medium-only-text-left {
     text-align: left !important;
   }
@@ -5594,7 +5594,7 @@ table tr td {
     text-align: justify !important;
   }
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .medium-text-left {
     text-align: left !important;
   }
@@ -5611,7 +5611,7 @@ table tr td {
     text-align: justify !important;
   }
 }
-@media only screen and (min-width: 50.063em) and (max-width: 64em) {
+@media only screen and (min-width: 53.063em) and (max-width: 80em) {
   .large-only-text-left {
     text-align: left !important;
   }
@@ -5628,7 +5628,7 @@ table tr td {
     text-align: justify !important;
   }
 }
-@media only screen and (min-width: 50.063em) {
+@media only screen and (min-width: 53.063em) {
   .large-text-left {
     text-align: left !important;
   }
@@ -5645,7 +5645,7 @@ table tr td {
     text-align: justify !important;
   }
 }
-@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+@media only screen and (min-width: 80.063em) and (max-width: 100em) {
   .xlarge-only-text-left {
     text-align: left !important;
   }
@@ -5662,7 +5662,7 @@ table tr td {
     text-align: justify !important;
   }
 }
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: 80.063em) {
   .xlarge-text-left {
     text-align: left !important;
   }
@@ -5679,7 +5679,7 @@ table tr td {
     text-align: justify !important;
   }
 }
-@media only screen and (min-width: 90.063em) and (max-width: 99999999em) {
+@media only screen and (min-width: 100.063em) and (max-width: 99999999em) {
   .xxlarge-only-text-left {
     text-align: left !important;
   }
@@ -5696,7 +5696,7 @@ table tr td {
     text-align: justify !important;
   }
 }
-@media only screen and (min-width: 90.063em) {
+@media only screen and (min-width: 100.063em) {
   .xxlarge-text-left {
     text-align: left !important;
   }
@@ -5771,7 +5771,7 @@ p aside {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #222;
@@ -5845,7 +5845,7 @@ small {
 }
 
 code {
-  font-family: "Source Code Pro", Courier, monospace;
+  font-family: "Source Code Pro", Consolas, "Liberation Mono", Courier, monospace;
   font-weight: 600;
   color: #333333;
   background-color: #ecf6fb;
@@ -5989,7 +5989,7 @@ blockquote p {
   padding: 0 0.0625rem;
 }
 
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.3;
   }
@@ -6189,7 +6189,7 @@ blockquote p {
   padding: 0 0.9375rem;
 }
 
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .tabs.vertical {
     width: 20%;
     max-width: 20%;
@@ -6291,7 +6291,7 @@ blockquote p {
   font-weight: normal;
 }
 
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .tooltip > .nub {
     border-color: transparent transparent #333333 transparent;
     top: -10px;
@@ -6320,8 +6320,8 @@ blockquote p {
   }
 }
 meta.foundation-mq-topbar {
-  font-family: "/only screen and (min-width:36.063em)/";
-  width: 36.063em;
+  font-family: "/only screen and (min-width:53.063em)/";
+  width: 53.063em;
 }
 
 /* Wrapped around .top-bar to contain to grid width */
@@ -6387,7 +6387,7 @@ meta.foundation-mq-topbar {
   margin-bottom: 0;
   font-size: 0.75rem;
 }
-@media only screen and (max-width: 36em) {
+@media only screen and (max-width: 35em) {
   .top-bar .button, .top-bar button {
     position: relative;
     top: -1px;
@@ -6702,7 +6702,7 @@ meta.foundation-mq-topbar {
   display: block;
 }
 
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 53.063em) {
   .top-bar {
     background: #333333;
     overflow: visible;
@@ -6988,7 +6988,7 @@ meta.foundation-mq-topbar {
   height: 2.8125rem;
   top: 0;
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .tab-bar-section.left, .tab-bar-section.right {
     text-align: left;
   }
@@ -7134,7 +7134,7 @@ ul.off-canvas-list li a:hover {
   z-index: 1002;
   -webkit-tap-highlight-color: transparent;
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .move-right .exit-off-canvas:hover {
     background: rgba(255, 255, 255, 0.05);
   }
@@ -7163,7 +7163,7 @@ ul.off-canvas-list li a:hover {
   z-index: 1002;
   -webkit-tap-highlight-color: transparent;
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .move-left .exit-off-canvas:hover {
     background: rgba(255, 255, 255, 0.05);
   }
@@ -7192,7 +7192,7 @@ ul.off-canvas-list li a:hover {
   z-index: 1002;
   -webkit-tap-highlight-color: transparent;
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .offcanvas-overlap .exit-off-canvas:hover {
     background: rgba(255, 255, 255, 0.05);
   }
@@ -7221,7 +7221,7 @@ ul.off-canvas-list li a:hover {
   z-index: 1002;
   -webkit-tap-highlight-color: transparent;
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .offcanvas-overlap-left .exit-off-canvas:hover {
     background: rgba(255, 255, 255, 0.05);
   }
@@ -7250,7 +7250,7 @@ ul.off-canvas-list li a:hover {
   z-index: 1002;
   -webkit-tap-highlight-color: transparent;
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .offcanvas-overlap-right .exit-off-canvas:hover {
     background: rgba(255, 255, 255, 0.05);
   }
@@ -7444,7 +7444,7 @@ ul.off-canvas-list li a:hover {
   }
 }
 /* medium displays */
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .show-for-medium-only, .show-for-medium-up, .show-for-medium, .show-for-medium-down, .hide-for-large-only, .hide-for-large-up, .hide-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
     display: inherit !important;
   }
@@ -7490,7 +7490,7 @@ ul.off-canvas-list li a:hover {
   }
 }
 /* large displays */
-@media only screen and (min-width: 50.063em) {
+@media only screen and (min-width: 53.063em) {
   .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .show-for-large-only, .show-for-large-up, .show-for-large, .show-for-large-down, .hide-for-xlarge-only, .hide-for-xlarge-up, .hide-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
     display: inherit !important;
   }
@@ -7536,7 +7536,7 @@ ul.off-canvas-list li a:hover {
   }
 }
 /* xlarge displays */
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: 80.063em) {
   .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .hide-for-large-only, .show-for-large-up, .hide-for-large, .hide-for-large-down, .show-for-xlarge-only, .show-for-xlarge-up, .show-for-xlarge, .show-for-xlarge-down, .hide-for-xxlarge-only, .hide-for-xxlarge-up, .hide-for-xxlarge, .show-for-xxlarge-down {
     display: inherit !important;
   }
@@ -7582,7 +7582,7 @@ ul.off-canvas-list li a:hover {
   }
 }
 /* xxlarge displays */
-@media only screen and (min-width: 90.063em) {
+@media only screen and (min-width: 100.063em) {
   .hide-for-small-only, .show-for-small-up, .hide-for-small, .hide-for-small-down, .hide-for-medium-only, .show-for-medium-up, .hide-for-medium, .hide-for-medium-down, .hide-for-large-only, .show-for-large-up, .hide-for-large, .hide-for-large-down, .hide-for-xlarge-only, .show-for-xlarge-up, .hide-for-xlarge, .hide-for-xlarge-down, .show-for-xxlarge-only, .show-for-xxlarge-up, .show-for-xxlarge, .show-for-xxlarge-down {
     display: inherit !important;
   }
@@ -7831,11 +7831,38 @@ th.hide-for-touch {
 }
 /* Matching classes assigned so we don't use headings for visual styling
 concept from the w3's css - http://www.w3.org/2008/site/css/minimum */
-h6, .h6-style {
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #000;
-  font-family: 'Open Sans';
+h6 .grabbing-green, .h6-style .grabbing-green {
+  color: #7dcc1d;
+  background-color: none;
+}
+h6 .vivid-red, .h6-style .vivid-red {
+  color: #FF191A;
+  background-color: none;
+}
+h6 .darker-blue, .h6-style .darker-blue {
+  color: #009DFF;
+  background-color: none;
+}
+h6 .navy, .h6-style .navy {
+  color: #17445f;
+  background-color: none;
+}
+
+.white-text {
+  color: #fff;
+}
+
+.top-bar .name h1,
+.top-bar .name .h1-style {
+  line-height: 45px;
+  font-size: 1.0625rem;
+  margin: 0;
+}
+.top-bar .name a {
+  color: #eee;
+}
+.top-bar .name a:hover, .top-bar .name a:focus {
+  color: #fff;
 }
 
 /* i is semantic HTML5 for things which shouldn't be read with 'emphasis' by a screenreader (like a latin species name) */
@@ -7875,11 +7902,11 @@ abbr.initialism {
   font-size: 20px;
 }
 
-.center {
+.center-text {
   text-align: center;
 }
 
-.centered {
+.center-block {
   margin-left: auto;
   margin-right: auto;
 }
@@ -7892,51 +7919,205 @@ abbr.initialism {
   font-size: 110%;
 }
 
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
 /* Utility spacing classes, concept from the w3's css - http://www.w3.org/2008/site/css/minimum */
 /* 'p' is for padding */
-.p1 {
-  padding: 1rem;
+.p10 {
+  padding: 10px;
 }
 
-.p1t {
-  padding-top: 1rem;
+.p10t {
+  padding-top: 10px;
 }
 
-.p1r {
-  padding-right: 1rem;
+.p10r {
+  padding-right: 10px;
 }
 
-.p1b {
-  padding-bottom: 1rem;
+.p10b {
+  padding-bottom: 10px;
 }
 
-.p1l {
-  padding-left: 1rem;
+.p10l {
+  padding-left: 10px;
+}
+
+.p20 {
+  padding: 20px;
+}
+
+.p20t {
+  padding-top: 20px;
+}
+
+.p20r {
+  padding-right: 20px;
+}
+
+.p20b {
+  padding-bottom: 20px;
+}
+
+.p20l {
+  padding-left: 20px;
 }
 
 /* 'm' is for margin */
-.m1 {
-  margin: 1rem;
+.m10 {
+  margin: 10px;
 }
 
-.m1t {
-  margin-top: 1rem;
+.m10t {
+  margin-top: 10px;
 }
 
-.m1r {
-  margin-right: 1rem;
+.m10r {
+  margin-right: 10px;
 }
 
-.m1b {
-  margin-bottom: 1rem;
+.m10b {
+  margin-bottom: 10px;
 }
 
-.m1s {
-  margin-left: 1rem;
+.m10s {
+  margin-left: 10px;
+}
+
+.m20 {
+  padding: 20px;
+}
+
+.m20t {
+  padding-top: 20px;
+}
+
+.m20r {
+  padding-right: 20px;
+}
+
+.m20b {
+  padding-bottom: 20px;
+}
+
+.m20l {
+  padding-left: 20px;
 }
 
 /* Start to customize Reverie */
-@media only screen and (max-width: 600px) {
+.navy {
+  background-color: #17445f;
+}
+
+.grabbing-green {
+  background-color: #7dcc1d;
+}
+
+.vivid-red {
+  background-color: #FF191A;
+}
+
+.darker-blue {
+  background-color: #009DFF;
+}
+
+.panel h5.grabbing-green {
+  color: #7dcc1d;
+  background-color: transparent;
+}
+.panel h5.vivid-red {
+  color: #FF191A;
+  background-color: transparent;
+}
+.panel h5.darker-blue {
+  color: #009DFF;
+  background-color: transparent;
+}
+.panel h5.navy {
+  color: #17445f;
+  background-color: transparent;
+}
+
+.get-noticed {
+  color: #17445f;
+  font-size: 120%;
+  font-weight: bolder;
+  text-shadow: 0 0 2px #fff;
+}
+
+#content {
+  border: none;
+  background-color: transparent;
+}
+
+.top-bar li {
+  text-shadow: 0px 1px 1px #fff;
+}
+.top-bar li.active {
+  text-shadow: none;
+}
+
+.contain-to-grid {
+  box-shadow: 0 0 5px #777;
+}
+
+/*
+//
+*/
+.home #hero, .page-template-page-banner-php #hero {
+  margin-bottom: 1rem;
+}
+
+#hero {
+  text-align: left;
+  position: relative;
+  padding: 0;
+}
+
+#hero h1 {
+  font-size: 4em;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: 100%;
+}
+
+#hero h4 {
+  font-size: 1.35em;
+  color: white;
+  font-weight: 300;
+}
+
+#hero h3 {
+  color: white;
+}
+
+#hero .floating-banner img {
+  width: 100%;
+  right: 0;
+  top: 0;
+}
+
+.abacus-advertising-info {
+  position: absolute;
+  top: 1em;
+  left: 0;
+}
+
+.call-to-action {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* --- */
+@media only screen and (max-width: 35em) {
   #wpadminbar {
     margin-top: -46px;
   }
@@ -8250,7 +8431,7 @@ footer.full-width .love-reverie {
     margin-bottom: 1.25rem;
   }
 }
-@media only screen and (min-width: 36.063em) {
+@media only screen and (min-width: 35.063em) {
   #content {
     padding: 3.125rem;
   }
@@ -8259,7 +8440,7 @@ footer.full-width .love-reverie {
     margin: 3.125rem -3.125rem;
   }
 }
-@media only screen and (min-width: 50.063em) {
+@media only screen and (min-width: 53.063em) {
   #sidebar {
     padding-left: 1.875rem;
     padding-right: 0;
