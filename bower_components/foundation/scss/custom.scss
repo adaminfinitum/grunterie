@@ -6,7 +6,42 @@ concept from the w3's css - http://www.w3.org/2008/site/css/minimum */
    h3,.h3-style{}
    h4,.h4-style{}
    h5,.h5-style{}
-   h6,.h6-style{text-transform: uppercase; font-weight:600; color:#000; font-family: 'Open Sans';}
+      h6,.h6-style{
+    .grabbing-green{
+      color:$grabbing-green;
+      background-color:none;
+    }
+    .vivid-red{
+      color:$vivid-red;
+      background-color:none;
+    }
+    .darker-blue{
+      color:$darker-blue;
+      background-color:none;
+    }
+    .navy{
+      color:$dark-navy;
+      background-color:none;
+    }
+    }
+
+    .white-text{
+      color:#fff;
+    }
+
+   .top-bar .name{
+      h1,
+      .h1-style{
+        //font-family:'Open Sans';
+        line-height:45px; font-size: rem-calc(17); margin:0;}
+      a{color:#eee;
+        &:hover,
+        &:focus{
+          color:#fff;
+
+        }
+      }
+    }
 
    /* i is semantic HTML5 for things which shouldn't be read with 'emphasis' by a screenreader (like a latin species name) */
 
@@ -26,30 +61,142 @@ concept from the w3's css - http://www.w3.org/2008/site/css/minimum */
 
 /* Use for location references or 'sub-headlines' that should be indexed as part of headline */
    .sub-title{display:block;letter-spacing:normal;word-spacing:normal;font-size:20px;}
-   .center{text-align: center;}
-   .centered{margin-left:auto;margin-right: auto;}
+   .center-text{text-align: center;}
+   .center-block{margin-left:auto;margin-right: auto;}
    .ninety{font-size:90%;}
    .one-ten{font-size:110%;}
+   .block{display:block;}
+   .inline{display:inline;}
 
    /* Utility spacing classes, concept from the w3's css - http://www.w3.org/2008/site/css/minimum */
 
     /* 'p' is for padding */
-   .p1{padding:1rem;}
-       .p1t{padding-top:1rem;}
-       .p1r{padding-right:1rem;}
-       .p1b{padding-bottom:1rem;}
-       .p1l{padding-left:1rem;}
+   .p10{padding:10px;}
+       .p10t{padding-top:10px;}
+       .p10r{padding-right:10px;}
+       .p10b{padding-bottom:10px;}
+       .p10l{padding-left:10px;}
+
+   .p20{padding:20px;}
+       .p20t{padding-top:20px;}
+       .p20r{padding-right:20px;}
+       .p20b{padding-bottom:20px;}
+       .p20l{padding-left:20px;}
+
    /* 'm' is for margin */
-   .m1{margin:1rem;}
-       .m1t{margin-top:1rem;}
-       .m1r{margin-right:1rem;}
-       .m1b{margin-bottom:1rem;}
-       .m1s{margin-left:1rem;}
+   .m10{margin:10px;}
+       .m10t{margin-top:10px;}
+       .m10r{margin-right:10px;}
+       .m10b{margin-bottom:10px;}
+       .m10s{margin-left:10px;}
+
+    .m20{padding:20px;}
+       .m20t{padding-top:20px;}
+       .m20r{padding-right:20px;}
+       .m20b{padding-bottom:20px;}
+       .m20l{padding-left:20px;}
 /* Start to customize Reverie */
+
+.navy{background-color:$dark-navy;}
+.grabbing-green{background-color:$grabbing-green;}
+.vivid-red{background-color:$vivid-red;}
+.darker-blue{background-color:$darker-blue;}
+
+.panel h5{
+  &.grabbing-green{
+      color:$grabbing-green;
+      background-color:transparent;
+  }
+  &.vivid-red{
+      color:$vivid-red;
+      background-color:transparent;
+  }
+  &.darker-blue{
+      color:$darker-blue;
+      background-color:transparent;
+  }
+  &.navy{
+      color:$dark-navy;
+      background-color:transparent;
+  }
+}
+.get-noticed{
+    color:$dark-navy;
+    font-size:120%;
+    font-weight:bolder;
+    text-shadow: 0 0 2px #fff;
+}
+//.page-template-page-banner-php .container{background: url('http://scottsk9.dev/non-wp-img-opt/police-and-protection-dog-banner-1300x520.jpg') top center no-repeat;
+  #content {border:none; background-color:transparent;
+    //h1{color:#fff;}
+  }
+//}
+
+.top-bar li{
+  text-shadow: 0px 1px 1px #fff;
+  &.active{
+    text-shadow:none;
+  }
+}
+.contain-to-grid{
+  box-shadow: 0 0 5px #777;
+}
+/*
+//
+*/
+.home, .page-template-page-banner-php{
+  #hero {
+    margin-bottom: rem-calc(16);
+  }
+}
+#hero {
+  //height: 380px;
+  text-align: left;
+  position: relative;
+  padding: 0;
+}
+
+
+//@media screen and (max-width: 1024px) {
+//  #hero {
+//    height: 350px; }
+//}
+#hero h1 {
+  font-size: 4em;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: 100%;
+}
+#hero h4 {
+  font-size: 1.35em;
+  color: white;
+  font-weight: 300; }
+#hero h3 {
+  color: white;
+}
+#hero .floating-banner img {
+  width: 100%;
+  right: 0;
+  top: 0;
+}
+.protection-dogs{
+  position:absolute;
+  top: 1em;
+  left:0;
+}
+.police-k9-training{
+  position:absolute;
+  bottom: 0;
+  left:0;
+}
+
+/* --- */
+
 
 // fix wp admin bar issue on small screens
 #wpadminbar {
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 35em) {
     margin-top:-46px;
   }
 }

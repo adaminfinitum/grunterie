@@ -28,21 +28,19 @@ function reverie_enable_root_relative_urls() {
 
 if (reverie_enable_root_relative_urls()) {
   $root_rel_filters = array(
-    'bloginfo_url',
-    'wp_list_pages',
-    'wp_list_categories',
-    'the_content_more_link',
-    'the_tags',
     'get_pagenum_link',
     'get_comment_link',
     'month_link',
     'day_link',
     'year_link',
-    'tag_link',
-    'the_author_posts_link',
     'script_loader_src',
     'style_loader_src'
   );
 
   add_filters($root_rel_filters, 'reverie_root_relative_url');
+}
+function add_filters($tags, $function) {
+  foreach($tags as $tag) {
+    add_filter($tag, $function);
+  }
 }

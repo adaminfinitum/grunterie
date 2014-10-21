@@ -22,8 +22,8 @@ function reverie_register_required_plugins() {
 		),
 
 		array(
-			'name' 				=> 'Pods - Custom Content Types and Fields',
-			'slug' 				=> 'pods',
+			'name' 				=> 'PS Disable Auto Formatting',
+			'slug' 				=> 'ps-disable-auto-formatting',
 			'required' 			=> false,
 			'force_activation'	=> false
 		),
@@ -48,12 +48,6 @@ function reverie_register_required_plugins() {
 		array(
 			'name' 				=> 'Yet Another Related Posts Plugin',
 			'slug' 				=> 'yet-another-related-posts-plugin',
-			'required' 			=> false,
-			'force_activation'	=> false
-		),
-		array(
-			'name' 				=> 'Dont Muck My Markup',
-			'slug' 				=> 'dont-muck-my-markup',
 			'required' 			=> false,
 			'force_activation'	=> false
 		),
