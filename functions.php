@@ -38,7 +38,7 @@ require_once( get_template_directory() . '/lib/nav.php'); // filter default word
 require_once( get_template_directory() . '/lib/presstrends.php'); // load PressTrends to track the usage of Reverie across the web, comment this line if you don't want to be tracked
 
 
-//require_once( get_template_directory() . '/lib/relative-urls.php');   // Root relative URLs
+require_once( get_template_directory() . '/lib/relative-urls.php');   // Root relative URLs
 
 
 
@@ -72,7 +72,7 @@ if( ! function_exists( 'reverie_theme_support' ) ) {
         add_theme_support('automatic-feed-links');
 
         // Enable relative URLs
-        add_theme_support('soil-relative-urls');
+        add_theme_support('root-relative-urls');
 
         // Add post formats support. http://codex.wordpress.org/Post_Formats
         add_theme_support('post-formats', array('aside', 'gallery', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat'));

@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr" class="no-js">
 <head>
 	<meta charset="utf-8">
-	<title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
+	<title><?php wp_title('|', true, 'right');?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
 <?php wp_head(); ?>
@@ -14,7 +14,7 @@
 	<nav class="top-bar" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" data-topbar>
 	    <ul class="title-area">
 	        <li class="name">
-	        	<span class="h1-style"><a href="//www.scottsk9.com/" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="/wp-content/uploads/2014/09/scotts-police-k9-logo-trans-150x29.png" alt="Scott's Police K9 Protection Dogs"></a></span>
+	        	<span class="h1-style"><a href="/" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></a></span>
 	        </li>
 			<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
