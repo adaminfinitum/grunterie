@@ -20,12 +20,13 @@ get_header();
 ?>
 
 <!-- Row for main content area -->
+	<style>.entry-content li{padding:.7em;}</style>
 	<div class="small-12 large-8 columns" id="content" role="main">
 
 		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 			<header>
 				<h1 class="entry-title"><?php _e('File Not Found', 'reverie'); ?></h1>
-				<h2>Sorry, I can't find that page (Error 404).</h2>
+				<h2>Sorry, I can't find that page <small>(Error Code 404)</small></h2>
 			</header>
 			<div class="entry-content">
 				<div class="error">
@@ -42,49 +43,47 @@ get_header();
 						}
 						if (count($posts) > 0) {
 							echo "<ol><li>";
-							echo "<p>Were you looking for <strong>one of the following</strong> posts or pages?</p>";
+							echo "<p>Were you looking for one of the these posts or pages?</p>";
 							echo "<ul>";
 							foreach ($posts as $post) {
 								echo '<li><a href="'.get_permalink($post->ID).'">'.$post->post_title.'</a></li>';
 							}
 							echo "</ul>";
-							echo "<p>If not, don't worry, I've got a few more tips for you to find it:</p></li>";
+							echo "<h6>If not, please try:</h6></li>";
 						} else {
-							echo "<p><strong>Don't worry though!</strong> I've got a few tips for you to find it:</p>";
+							echo "<p>No Worries! Try these:</p>";
 							echo "<ol>";
 						}
 					?>
 						<li>
-							<label for="s"><strong>Search</strong> for it:</label>
+							<label for="s"><b>Searching for it:</b> </label>
 							<form style="display:inline;" action="<?php bloginfo('siteurl');?>">
-								<input type="text" value="<?php echo esc_attr($s); ?>" id="s" name="s"/> <input type="submit" value="Search"/>
+							    <div class="row collapse">
+							    	<div class="large-8 small-9 columns">
+										<input type="text" value="<?php echo esc_attr($s); ?>" id="s" name="s"/>
+									</div>
+									<div class="large-4 small-3 columns">
+										<input type="submit" value="Search" class="button postfix" />
+									</div>
+							    </div>
 							</form>
 						</li>
 						<li>
-							<strong>If you typed in a URL...</strong> make sure the spelling, cApitALiZaTiOn, and punctuation are correct. Then try reloading the page.
-
+							<b>If you typed in a URL double-check the spelling, punctuation and capitalization.</b>
 						</li>
 						<li>
-							<strong>Look</strong> for it in the <a href="<?php bloginfo('siteurl');?>/sitemap/">sitemap</a>.
-
+							<b>Look for it in the <a href="<?php bloginfo('siteurl');?>/sitemap/">sitemap</a>.</b>
 						</li>
 						<li>
-							<strong>Start over again</strong> at my <a href="<?php bloginfo('siteurl');?>">homepage</a> (and please contact me to say what went wrong, so I can fix it).
+							<b>Start over on the <a href="<?php bloginfo('siteurl');?>">homepage</a></b> (and please contact me to say what went wrong, so I can fix it).
 						</li>
 					</ol>
 					<h4>Sitemap Included</h4>
 					<?php get_template_part('/partials/sitemap'); ?>
 
-				<!--
-				<ul>
-					<li><?php _e('Check your spelling', 'reverie'); ?></li>
-					<li><?php printf(__('Return to the <a href="%s">home page</a>', 'reverie'), home_url()); ?></li>
-					<li><?php _e('Click the <a href="javascript:history.back()">Back</a> button', 'reverie'); ?></li>
-				</ul>
-				-->
 			</div>
 		</article>
-
 	</div>
 	<?php get_sidebar(); ?>
 <?php get_footer(); ?>
+
