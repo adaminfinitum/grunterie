@@ -1,8 +1,14 @@
-#Grunterie - Working with Foundation 5.4.3
+#Grunterie - Working with Foundation 5.4.3 (SASS 3.4.0, Compass 1.0.1)
 
-This is a customized fork of Grunterie is a WordPress theme based on [Reverie](http://themefortress.com/reverie/), a "versatile HTML5 responsive WordPress framework based on [ZURB's Foundation](http://foundation.zurb.com/)." Reverie is set up to use the Compass gem to compile SCSS. With this version of Grunterie you still use Compass but the compilation and watching is handled via Grunt (or Compass).
+This repo works with Sass 3.4.0 and Compass 1.0.1 (I have not tested it with any other versions of SASS or Compass). On the next version of Foundation (5.4.4, I believe) the authors rolled back to a version which did not require SASS 3.4.x (as previous version of Foundation hadn't) due to the [overwhelming number of support requests](http://foundation.zurb.com/forum/posts/19541-sass-compass-compile-issues).
+
+Once I got this working, I quit tinkering with the SASS/Compass/Foundation parts of it (I had other stuff to do). I'm not sure if newer versions of Foundation have ironed this out but this works as-is.
+
+This is a customized fork of [Grunterie](https://github.com/gpspake/grunterie), which is a WordPress theme based on [Reverie](http://themefortress.com/reverie/), a "versatile HTML5 responsive WordPress framework based on [ZURB's Foundation](http://foundation.zurb.com/)." Reverie is set up to use the Compass gem to compile SCSS. With this version of Grunterie you still use Compass but the compilation and watching is handled via Grunt (or Compass).
 
 It seems Foundation did not aniticipate anyone not wanting to use libsass but wanting to use Grunt...it's taken me _dozens of hours to get a fully working copy_; consider that a word of warning before you type `bower update`.
+
+I use `grunt` for normal development work because I want linting and LiveReload and all that jazz. Even after a site is live in production I almost always have to make some changes and so for that reason, I usually change the settings in `config.rb` (it gives more granular control of the level of minification of CSS) and from the command line force a compile according to those settings before I push to production.
 
 You can always use Sass with a Compass project but not the other way around. Plus, there's some pretty slick stuff that Compass does and that "plays nice" with it like: the SCSS syntax snippets that the Colorzilla CSS3 gradient generator spits out and [Effeckt.css](http://h5bp.github.io/Effeckt.css/).
 
@@ -23,7 +29,7 @@ Uses [Grunt](http://gruntjs.com/) for task automation and quality assurance but 
 
 ## Requirements
 
-Should be ready to use but That being said, if you want to customize the theme with SASS using lib-sass or Compass instead of writing vanilla css, you'll still need to follow the directions below.
+Should be ready to use but that being said, if you want to customize the theme with SASS using lib-sass or Compass instead of writing vanilla css, you'll still need to follow the directions below.
 
 You'll need to have the following items installed before continuing.
 
@@ -40,11 +46,13 @@ cd grunterie
 bower install
 ```
 
+Dec 2014: If you use [Homebrew](http://brew.sh) be advised that there is a new recommended way of installing (and updating) [Node via Homebrew](https://github.com/Homebrew/homebrew/pull/28075).
+
 While you're working on the project, run:
 
 `grunt`
 
-As noted above, I had a heck of a time getting it to work right...not entirely sure why but based on some discussions in support forums (and some notes on the project page for `grunt-contrib-compass`) I ended up uninstalling and re-installing Compass and Sass. 
+As noted above, I had a heck of a time getting it to work right...not entirely sure why but based on some discussions in support forums (and some notes on the project page for `grunt-contrib-compass`) I ended up uninstalling and re-installing Compass and Sass.
 
 Sept. 15 2014 - It's working for me with Sass 3.4.0 and Compass 1.0.1...I've read that `npm install` shouldn't require  `sudo` but it always does for me, `bower install` doesn't.
 
@@ -52,7 +60,7 @@ Sept. 15 2014 - It's working for me with Sass 3.4.0 and Compass 1.0.1...I've rea
 
   * `scss/_settings.scss`: Foundation configuration settings go in here
   * `scss/app.scss`: Application styles go here (Probably no need to mess with this.)
-  * `scss/app.scss` pulls the styles from `bower_components/foundation/scss` including a file I added for custom styles (named `custom.scss`), theme styles go here 
+  * `scss/app.scss` pulls the styles from `bower_components/foundation/scss` including a file I added for custom styles (named `custom.scss`), theme styles go here
 
 #Using Compass
 
