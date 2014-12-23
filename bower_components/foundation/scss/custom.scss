@@ -34,10 +34,10 @@ concept from the w3's css - http://www.w3.org/2008/site/css/minimum */
       .h1-style{
         //font-family:'Open Sans';
         line-height:45px; font-size: rem-calc(17); margin:0;}
-      a{color:#eee;
+      a{color:#fff;
         &:hover,
         &:focus{
-          color:#fff;
+          color:#ddd;
 
         }
       }
@@ -126,18 +126,17 @@ concept from the w3's css - http://www.w3.org/2008/site/css/minimum */
     font-weight:bolder;
     text-shadow: 0 0 2px #fff;
 }
-//.page-template-page-banner-php .container{background: url('http://scottsk9.dev/non-wp-img-opt/police-and-protection-dog-banner-1300x520.jpg') top center no-repeat;
   #content {border:none; background-color:transparent;
     //h1{color:#fff;}
   }
 //}
 
-.top-bar li{
-  text-shadow: 0px 1px 1px #fff;
-  &.active{
-    text-shadow:none;
-  }
-}
+//.top-bar li{
+//  text-shadow: 0px 1px 1px #fff;
+//  &.active{
+//    text-shadow:none;
+//  }
+//}
 .contain-to-grid{
   box-shadow: 0 0 5px #777;
 }
