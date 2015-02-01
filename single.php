@@ -1,21 +1,22 @@
 <?php get_header(); ?>
 
 <!-- Row for main content area -->
-	<div class="small-12 large-8 columns" id="content" role="main">
-	
+	<div class="small-12 large-8 columns" id="content" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+
 	<?php /* Start loop */ ?>
 	<?php while (have_posts()) : the_post(); ?>
-		<article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+		<article <?php post_class() ?> id="post-<?php the_ID(); ?>" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
 			<header>
-				<h1 class="entry-title"><?php the_title(); ?></h1>
+				<h1 class="entry-title" itemprop="headline"><?php the_title(); ?></h1>
 				<?php reverie_entry_meta(); ?>
 			</header>
-			<div class="entry-content">
+			<div class="entry-content" itemprop="text">
 				<?php the_content(); ?>
 			</div>
 			<footer>
-				<?php wp_link_pages(array('before' => '<nav id="page-nav"><p>' . __('Pages:', 'reverie'), 'after' => '</p></nav>' )); ?>
-				<p class="entry-tags"><?php the_tags(); ?></p>
+				<?php wp_link_pages(array('before' => '<nav id="page-nav" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement"><p>' . __('Pages:', 'reverie'), 'after' => '</p></nav>' )); ?>
+				<p class="entry-categories" itemscope="itemscope" itemtype="http://schema.org/relatedLink">Posted Under: <?php the_category(', '); ?></p>
+				<p class="entry-tags" itemscope="itemscope" itemtype="http://schema.org/relatedLink"><?php the_tags(); ?></p>
 				<?php edit_post_link('Edit this Post'); ?>
 			</footer>
 		</article>
@@ -35,5 +36,5 @@
 
 	</div>
 	<?php get_sidebar(); ?>
-		
+
 <?php get_footer(); ?>

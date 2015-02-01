@@ -88,3 +88,5 @@ To use Compass, you'll need to make sure the compass gem is installed (```gem in
 After that, just run `grunt`
 
 Production sites should have the `compass` task settings in `Gruntfile.js` toggled accordingly. One of the required plugins, Piklist, does something weird to menus (it wraps the 'title' attributes of the links in `span`s which then become visible and look ridiculous) so I always go into the plugin itself `/wp-content/plugins/piklist/includes/class-piklist-menu.php` and comment out a few lines towards the end of the file, currently lines 75-82.
+
+I use Grunt and the Compass settings in `Gruntfile.js` for normal `watch` and compilation tasks (including LiveReload) but I actually use `compass compile` and the configurations in `config.rb` for more granular control over the level of minification and if there are source file comments in the output CSS.

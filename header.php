@@ -2,24 +2,9 @@
 <html lang="en" dir="ltr" class="no-js">
 <head>
 	<meta charset="utf-8">
-	<title><?php wp_title('|', true, 'right'); bloginfo('name'); ?></title>
+	<title><?php wp_title('|', true, 'right');?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-	<link rel="shortcut icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> Feed" href="<?php echo home_url(); ?>/feed/">
-
-	<link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-icon-ipad.png" />
-	<link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-icon-retina.png" />
-	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-icon.png" />
-	<!-- Enable Startup Image for iOS Home Screen Web App -->
-	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/mobile-load.png" />
-	<!-- Startup Image iPad Landscape (748x1024) -->
-	<link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-load-ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" />
-	<!-- Startup Image iPad Portrait (768x1004) -->
-	<link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-load-ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
-	<!-- Startup Image iPhone (320x460) -->
-	<link rel="apple-touch-startup-image" href="<?php echo get_template_directory_uri(); ?>/img/devices/reverie-load.png" media="screen and (max-device-width: 320px)" />
 <?php wp_head(); ?>
 </head>
 <body <?php body_class('antialiased'); ?> itemscope="itemscope" itemtype="http://schema.org/WebPage">
@@ -29,7 +14,7 @@
 	<nav class="top-bar" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" data-topbar>
 	    <ul class="title-area">
 	        <li class="name">
-	        	<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+	        	<span class="h1-style"><a href="/" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?></a></span>
 	        </li>
 			<!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 			<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>

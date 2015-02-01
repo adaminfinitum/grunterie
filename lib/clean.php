@@ -52,7 +52,7 @@ if( ! function_exists( 'reverie_head_cleanup ' ) ) {
 		// post and comment feeds
 		// remove_action( 'wp_head', 'feed_links', 2 );
 		// EditURI link
-		remove_action( 'wp_head', 'rsd_link' );
+		// remove_action( 'wp_head', 'rsd_link' );
 		// windows live writer
 		remove_action( 'wp_head', 'wlwmanifest_link' );
 		// index link
@@ -293,12 +293,12 @@ function reverie_body_class($classes) {
   }
 
   // Remove unnecessary classes
-  $home_id_class = 'page-id-' . get_option('page_on_front');
-  $remove_classes = array(
-    'page-template-default',
-    $home_id_class
-  );
-  $classes = array_diff($classes, $remove_classes);
+  // $home_id_class = 'page-id-' . get_option('page_on_front');
+  // $remove_classes = array(
+  //   'page-template-default',
+  //   $home_id_class
+  // );
+  // $classes = array_diff($classes, $remove_classes);
 
   return $classes;
 }
@@ -309,7 +309,7 @@ add_filter('body_class', 'reverie_body_class');
  */
 
 function reverie_excerpt_more($more) {
-  return ' &hellip; <a href="' . get_permalink() . '">' . __('Rest of Post', 'reverie') . '</a>';
+  return ' <a href="' . get_permalink() . '">' . __('More of this post', 'reverie') . '</a>';
 }
 add_filter('excerpt_more', 'reverie_excerpt_more');
 

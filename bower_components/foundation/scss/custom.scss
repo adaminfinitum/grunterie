@@ -1,0 +1,946 @@
+/* Matching classes assigned so we don't use headings for visual styling
+concept from the w3's css - http://www.w3.org/2008/site/css/minimum */
+
+   h1,.h1-style{}
+   h2,.h2-style{}
+   h3,.h3-style{}
+   h4,.h4-style{}
+   h5,.h5-style{}
+      h6,.h6-style{
+    .grabbing-green{
+      color:$grabbing-green;
+      background-color:none;
+    }
+    .vivid-red{
+      color:$vivid-red;
+      background-color:none;
+    }
+    .darker-blue{
+      color:$darker-blue;
+      background-color:none;
+    }
+    .navy{
+      color:$dark-navy;
+      background-color:none;
+    }
+    }
+
+    .white-text{
+      color:#fff;
+    }
+
+   .top-bar .name{
+      h1,
+      .h1-style{
+        //font-family:'Open Sans';
+        line-height:45px; font-size: rem-calc(17); margin:0;}
+      a{color:#fff;
+        &:hover,
+        &:focus{
+          color:#ddd;
+
+        }
+      }
+    }
+
+   /* i is semantic HTML5 for things which shouldn't be read with 'emphasis' by a screenreader (like a latin species name) */
+
+   i,em,.italic-style{font-style: italic;}
+
+   /* b is semantic HTML5 for things which shouldn't be read in a 'strong' voice by a screenreader */
+
+   b,.bold-style{font-weight:bolder;}
+   strong{font-weight:bold;}
+   abbr[title]{border-bottom:thin dotted rgba(122, 122, 122, .5);}
+
+   /* no (dotted) bottom border for abbr in headlines */
+   h1>abbr,h2>abbr,h3>abbr,h4>abbr,h5>abbr,h6>abbr{border-bottom:none;}
+
+   /* courtesy of twitter bootstrap */
+   abbr.initialism{text-transform: uppercase; font-size:90%;}
+
+/* Use for location references or 'sub-headlines' that should be indexed as part of headline */
+   .sub-title{display:block;letter-spacing:normal;word-spacing:normal;font-size:20px;}
+   .center-text{text-align: center;}
+   .center-block{margin-left:auto;margin-right: auto;}
+   .ninety{font-size:90%;}
+   .one-ten{font-size:110%;}
+   .block{display:block;}
+   .inline{display:inline;}
+
+   /* Utility spacing classes, concept from the w3's css - http://www.w3.org/2008/site/css/minimum */
+
+    /* 'p' is for padding */
+   .p10{padding:10px;}
+       .p10t{padding-top:10px;}
+       .p10r{padding-right:10px;}
+       .p10b{padding-bottom:10px;}
+       .p10l{padding-left:10px;}
+
+   .p20{padding:20px;}
+       .p20t{padding-top:20px;}
+       .p20r{padding-right:20px;}
+       .p20b{padding-bottom:20px;}
+       .p20l{padding-left:20px;}
+
+   /* 'm' is for margin */
+   .m10{margin:10px;}
+       .m10t{margin-top:10px;}
+       .m10r{margin-right:10px;}
+       .m10b{margin-bottom:10px;}
+       .m10s{margin-left:10px;}
+
+    .m20{padding:20px;}
+       .m20t{padding-top:20px;}
+       .m20r{padding-right:20px;}
+       .m20b{padding-bottom:20px;}
+       .m20l{padding-left:20px;}
+/* Start to customize Reverie */
+
+.navy{background-color:$dark-navy;}
+.grabbing-green{background-color:$grabbing-green;}
+.vivid-red{background-color:$vivid-red;}
+.darker-blue{background-color:$darker-blue;}
+
+.panel h5{
+  &.grabbing-green{
+      color:$grabbing-green;
+      background-color:transparent;
+  }
+  &.vivid-red{
+      color:$vivid-red;
+      background-color:transparent;
+  }
+  &.darker-blue{
+      color:$darker-blue;
+      background-color:transparent;
+  }
+  &.navy{
+      color:$dark-navy;
+      background-color:transparent;
+  }
+}
+.get-noticed{
+    color:$dark-navy;
+    font-size:120%;
+    font-weight:bolder;
+    text-shadow: 0 0 2px #fff;
+}
+  #content {border:none; background-color:transparent;
+    //h1{color:#fff;}
+  }
+//}
+
+//.top-bar li{
+//  text-shadow: 0px 1px 1px #fff;
+//  &.active{
+//    text-shadow:none;
+//  }
+//}
+.contain-to-grid{
+  box-shadow: 0 0 5px #777;
+}
+/*
+//
+*/
+.home, .page-template-page-banner-php{
+  #hero {
+    margin-bottom: rem-calc(16);
+  }
+}
+#hero {
+  //height: 380px;
+  text-align: left;
+  position: relative;
+  padding: 0;
+}
+
+
+//@media screen and (max-width: 1024px) {
+//  #hero {
+//    height: 350px; }
+//}
+#hero h1 {
+  font-size: 4em;
+  color: white;
+  font-weight: 500;
+  margin-bottom: 0;
+  line-height: 100%;
+}
+#hero h4 {
+  font-size: 1.35em;
+  color: white;
+  font-weight: 300; }
+#hero h3 {
+  color: white;
+}
+#hero .floating-banner img {
+  width: 100%;
+  right: 0;
+  top: 0;
+}
+.abacus-advertising-info{
+  position:absolute;
+  top: 1em;
+  left:0;
+}
+.call-to-action{
+  position:absolute;
+  bottom: 0;
+  left:0;
+}
+
+/* --- */
+
+
+// fix wp admin bar issue on small screens
+#wpadminbar {
+  @media only screen and (max-width: 35em) {
+    margin-top:-46px;
+  }
+}
+
+// add transition effect
+a, a:visited, a:hover, a:visited:hover {
+  //@include transition(all 100ms linear);
+}
+
+// add some margin for embeds in post
+figure {
+  //margin: 0 auto //$panel-margin-bottom;
+}
+
+// Add class for images
+figure img {
+  //@include border-radius(5px);
+}
+
+img.alignright {
+  float: right;
+  margin: 0 0 18px 18px;
+}
+
+img.alignleft {
+  float: left;
+  margin: 0 18px 18px 0;
+}
+
+img.aligncenter {
+  display: block;
+  margin: 18px auto;
+  }
+
+// Fix gallery images display
+.gallery {
+  dt, dl {
+    display: inline-block;
+  }
+  dl {
+    margin-left: rem-calc(9);
+    margin-right: rem-calc(9);
+  }
+}
+
+// Add HTML5 Caption Class for Images
+figure.figure {
+  margin: 0 auto;
+  display: table;
+  figcaption {
+    font-size: rem-calc(14);
+    line-height: 1.4;
+    font-style: italic;
+    padding: 8px 10px;
+    color: #999;
+    //margin-bottom: $panel-margin-bottom;
+    display: table-caption;
+    caption-side: bottom;
+  }
+}
+
+figure.alignright.figure {
+  float: right;
+  margin: 0 0 18px 18px;
+}
+
+figure.alignleft.figure {
+  float: left;
+  margin: 0 18px 18px 0;
+}
+
+.footer-widget {
+  background-color: #eee;
+}
+
+body > header.contain-to-grid {
+  margin-bottom: rem-calc(32);
+  max-width: 100%;
+  padding-bottom: 0;
+}
+
+#content {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.index-card {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: rem-calc(32);
+  margin-bottom: rem-calc(32);
+}
+
+span.author,
+time {
+  font-size: rem-calc(15);
+  color: #999;
+  a {
+    color: #999;
+    font-weight: bold;
+    &:hover, &:focus {
+      color: $body-font-color;
+    }
+  }
+}
+
+// define content padding for later use
+$content-padding: rem-calc(50);
+
+.entry-author {
+  background-color: #fbfbfb;
+  border: none;
+  padding: rem-calc(50) rem-calc(80);
+  margin: rem-calc(50) (-($column-gutter/2));
+  .avatar {
+    margin-right: rem-calc(40);
+    margin-bottom: rem-calc(24);
+  }
+  h4 {
+    a {
+      color: #999;
+      &:hover, &:focus {
+        color: $body-font-color;
+      }
+    }
+  }
+  p {
+    color: #bbb;
+  }
+}
+
+.post header,
+.page header {
+  margin-bottom: rem-calc(20);
+}
+
+.entry-tags {
+  color: #999;
+  font-size: rem-calc(15);
+  a {
+    color: #999;
+    &:hover, &:focus {
+      color: $body-font-color;
+    }
+  }
+}
+
+
+// add new pagination class for WordPress, Sass is amazingly fast
+.page-numbers {
+  color: #999;
+  @include pagination;
+}
+
+.pagination-centered ul.page-numbers li {
+  float: none;
+  display: inline-block;
+}
+
+.page-numbers li span.current {
+  //@include border-radius(3px);
+}
+
+.page-numbers li {
+  margin-left: rem-calc(8);
+}
+
+// customizing pagination for WordPress using Foundation mixins, this is not beautiful I know
+.page-numbers li {
+  span:hover a,
+  span a:focus {
+    background: $pagination-link-active-bg;
+  }
+  span.current {
+    background: $pagination-link-current-background;
+    padding: $pagination-link-pad;
+    color: $pagination-link-current-font-color;
+    font-weight: $pagination-link-current-font-weight;
+    cursor: $pagination-link-current-cursor;
+  }
+}
+
+.avatar {
+  //@include border-radius(50%);
+  float: left;
+}
+
+// add some basic comment styles
+ol.commentlist {
+  margin-left: 0;
+  margin-top: 2em;
+  p {
+    font-size: rem-calc(15);
+    line-height: 1.5;
+  }
+  ul.children {
+    margin-left: rem-calc(64);
+  }
+  li {
+    list-style: none;
+    margin-bottom: 2em;
+
+    .comment-author img {
+      float: left;
+      margin: 0 1em 0 0;
+    }
+    .author-meta {
+      display: inline-block;
+      cite.fn {
+        font-style: normal;
+        font-weight: 600;
+        margin-right: rem-calc(8);
+      }
+      time a {
+        color: #ccc;
+        font-size: rem-calc(14);
+        margin-right: rem-calc(8);
+      }
+      .comment-edit-link {
+        color: #bbb;
+        font-size: rem-calc(14);
+      }
+    }
+    section.comment {
+      margin-left: rem-calc(64);
+      margin-bottom: rem-calc(32);
+      a.comment-reply-link {
+        font-size: rem-calc(14);
+        font-weight: 600;
+        color: #bbb;
+        &:hover, &:focus {
+          color: $body-font-color;
+        }
+      }
+    }
+  }
+}
+
+
+
+// Start the sidebar
+#sidebar {
+  margin-top: rem-calc(20);
+}
+
+#sidebar, .footer-widget {
+  .panel {
+    border: none;
+    background-color: #eee;
+    padding: rem-calc(24) rem-calc(30);
+    a {
+      color: #666;
+      font-size: rem-calc(15);
+      &:hover, &:focus {
+        color: $body-font-color;
+      }
+    }
+  }
+  ul {
+    list-style-type: none;
+    margin-left: 0;
+  }
+  .widget {
+    h4 {
+      text-transform: uppercase;
+      font-size: rem-calc(16);
+      padding-bottom: rem-calc(16);
+      border-bottom: 1px solid #ddd;
+      color: #888;
+      font-weight: 600;
+    }
+  }
+}
+
+// Start the footer
+footer.full-width {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  padding-top: rem-calc(36);
+  padding-left: rem-calc(16);
+  padding-right: rem-calc(16);
+  padding-bottom: rem-calc(16);
+  p {
+    font-size: rem-calc(14);
+  }
+  a {
+    color: #666;
+    font-size: rem-calc(15);
+    &:hover, &:focus {
+      color: $body-font-color;
+    }
+  }
+  .love-reverie {
+    border-top: 1px solid #ccc;
+    padding-top: rem-calc(24);
+  }
+}
+
+// Fix admin bar issue, by bybe on Github
+.admin-bar > .fixed {
+  margin-top: rem-calc(32);
+}
+
+.f-topbar-fixed > .container {
+  margin-top: rem-calc(32);
+}
+
+@media #{$small-up} {
+  .entry-author {
+    .avatar {
+      margin-bottom: rem-calc(20);
+    }
+  }
+}
+
+@media #{$medium-up} {
+  #content {
+    padding: $content-padding;
+  }
+  .entry-author {
+    margin: rem-calc(50) (-$content-padding);
+  }
+}
+
+@media #{$large-up} {
+  #sidebar {
+    padding-left: $column-gutter;
+    padding-right: 0;
+    margin-top: rem-calc(0);
+  }
+  .footer-widget {
+    margin-top: rem-calc(48);
+    padding-top: rem-calc(32);
+  }
+}
+
+//======================================
+/* WordPress */
+//======================================
+
+//@import "accessibility";
+/* Text meant only for screen readers */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    &:hover, &:active, &:focus {
+        background-color: #f1f1f1;
+        border-radius: 3px;
+        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+        clip: auto !important;
+        color: #21759b;
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        height: auto;
+        left: 5px;
+        line-height: normal;
+        padding: 15px 23px 14px;
+        text-decoration: none;
+        top: 5px;
+        width: auto;
+        z-index: 100000;
+        /* Above WP toolbar */
+    }
+}
+
+//@import "admin";
+/* Fix for the admin bar on mobile */
+//@media screen and ( max-width: 782px ) {
+//  #wpadminbar {
+//    position: fixed;
+//  }
+//}
+
+
+//@import "clearings";
+/* ==========================================================================
+   Clearings
+   ========================================================================== */
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+    content: '';
+    display: table;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+    clear: both;
+}
+
+//@import "content";
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+.sticky {}
+
+.hentry {
+    margin: 0 0 1.5em;
+}
+
+.byline, .updated {
+   // display: none;
+}
+
+.single .byline, .group-blog .byline {
+    display: inline;
+}
+
+.page-content, .entry-content, .entry-summary {
+    margin: 1.5em 0 0;
+    font-family: 'Droid Serif';
+}
+
+.page-links {
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+    display: none;
+}
+
+//@import "image-alignment";
+/* ==========================================================================
+   Alignment
+   ========================================================================== */
+.alignleft {
+    float: left;
+}
+
+.alignright {
+    float: right;
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+blockquote.alignleft, img.alignleft {
+    margin: rem-calc(7 24 7 0);
+}
+
+.wp-caption.alignleft {
+    margin: rem-calc(7 14 7 0);
+}
+
+blockquote.alignright, img.alignright {
+    margin: rem-calc(7 0 7 24);
+}
+
+.wp-caption.alignright {
+    margin: rem-calc(7 0 7 14);
+}
+
+blockquote.aligncenter, img.aligncenter, .wp-caption.aligncenter {
+    margin-top: rem-calc(7);
+    margin-bottom: rem-calc(7);
+}
+
+.site-content blockquote {
+    &.alignleft, &.alignright {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        padding-top: rem-calc(17);
+        width: 50%;
+    }
+    &.alignleft p, &.alignright p {
+        margin-bottom: rem-calc(17);
+    }
+}
+
+.wp-caption {
+    margin-bottom: rem-calc(24);
+    img[class*="wp-image-"] {
+        display: block;
+        margin: 0;
+    }
+    color: #767676;
+}
+
+.wp-caption-text {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: rem-calc(12);
+    font-style: italic;
+    line-height: 1.5;
+    margin: rem-calc(9) 0;
+    padding-right: rem-calc(10);
+}
+
+.wp-smiley {
+    border: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+//@import "infinite-scrolling";
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .paging-navigation,
+.infinite-scroll.neverending .site-footer {
+    /* Theme Footer (when set to scrolling) */
+    display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
+.infinity-end.neverending .site-footer {
+    display: block;
+}
+
+
+//@import "media";
+/* ==========================================================================
+   Media
+   ========================================================================== */
+.page-content img.wp-smiley, .entry-content img.wp-smiley, .comment-content img.wp-smiley {
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+.wp-caption {
+    border: 1px solid #ccc;
+    margin-bottom: 1.5em;
+    max-width: 100%;
+    img[class*="wp-image-"] {
+        display: block;
+        margin: 1.2% auto 0;
+        max-width: 98%;
+    }
+}
+
+.wp-caption-text {
+    text-align: center;
+}
+
+.wp-caption .wp-caption-text {
+    margin: 0.8075em 0;
+}
+
+.site-main .gallery {
+    margin-bottom: 1.5em;
+}
+
+.gallery-caption {}
+
+.site-main {
+    .gallery {
+        a img {
+            border: none;
+            height: auto;
+            max-width: 90%;
+        }
+        dd, figcaption {
+            margin: 0;
+        }
+    }
+    .gallery-columns-4 .gallery-item img {}
+}
+
+/* Make sure embeds and iframes fit their containers */
+
+embed, iframe, object {
+    max-width: 100%;
+}
+
+//@import "navigation";
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+//.site-main [class*="navigation"] {
+//    margin: 0 0 rem-calc(25);
+//    @include clearfix;
+//}
+//
+//[class*="navigation"] {
+//    .nav-previous {
+//        float: left;
+//        width: 50%;
+//    }
+//    .nav-next {
+//        float: right;
+//        text-align: right;
+//        width: 50%;
+//    }
+//}
+
+
+//@import "widgets";
+/* ==========================================================================
+   Widgets
+   ========================================================================== */
+.widget {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    margin-bottom: rem-calc(30);
+    word-wrap: break-word;
+    ul, ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        padding: 5px 0;
+    }
+    .children li:last-child {
+        padding-bottom: 0;
+    }
+    li > ul,
+    li > ol {
+        margin-left: rem-calc(20);
+    }
+    select {
+        max-width: 100%;
+    }
+    .search-field {
+        margin-bottom: 0;
+    }
+}
+
+/* Search widget */
+.search-form .search-submit {
+}
+
+
+//
+/* Theme */
+//
+
+//@import "header";
+/* ==========================================================================
+   Header
+   ========================================================================== */
+.site-header {
+  margin-bottom: rem-calc(30);
+  .site-branding {}
+  .site-title {}
+  .site-description {}
+}
+
+
+//@import "navigation";
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+.main-navigation {
+
+}
+
+
+//@import "content";
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+.site-content {
+  article {
+    .entry-header {}
+    .entry-title {}
+    .entry-content {}
+    .entry-meta {}
+  }
+}
+
+
+//@import "sidebar";
+
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+#secondary {}
+
+
+//@import "footer";
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+.site-footer {
+  background: $secondary-color;
+  padding: rem-calc(80 0);
+  .site-info {}
+}
+
+// from app.scss
+
+ //#submit,
+ //input[type='submit'] {
+ // @extend .button;
+ //}
+
+textarea {
+  height: auto;
+}
+
+/*Language-specific*/
+:lang(af){quotes:'\201E' '\201D' '\201A' '\2019';}
+:lang(ak){font-family:Lucida,"DejaVu Sans",inherit;}
+:lang(ar){font-family:Tahoma 12,Nazli,KacstOne,"DejaVu Sans",inherit;}
+:lang(bg){quotes:'\201E' '\201C' '\201A' '\2018';}
+:lang(bn){font-family:FreeSans,MuktiNarrow,Vrinda,inherit;font-size:1.1em;line-height:1.4em;}
+:lang(cs){quotes:'\201E' '\201C' '\201A' '\2018';}
+:lang(da){quotes:'\00BB' '\00AB' '\203A' '\2039';}
+:lang(de)>q{quotes:'\201E' '\201C' '\201A' '\2018';}
+:lang(el){font-family:"DejaVu Sans",inherit;quotes:'\00AB' '\00BB' '\2039' '\203A';}
+:lang(en-GB){quotes:'\2018' '\2019' '\201C' '\201D';}
+:lang(es){quotes:'\00AB' '\00BB' '\2039' '\203A';}
+:lang(fa){font-family:Terafik,Traffic,Roya,Nazli,Nazanin,sans;font-size:1.5em;}
+:lang(fi){quotes:'\201D' '\201D' '\2019' '\2019';}
+:lang(fr){quotes:'\ab\2005' '\2005\bb' '\2039\2005' '\2005\203a';}
+:lang(hr){quotes:'\00BB' '\00AB' '\203A' '\2039';}
+:lang(is){quotes:'\201E' '\201C' '\201A' '\2018';}
+:lang(ja){font-size:1.1em;}
+:lang(km){font-family:"Khmer OS System","Khmer OS","Khmer Kampongtrach","CDT Khmer",inherit;line-height:2em;}
+:lang(ko){font-size:1.1em;}
+:lang(lt){quotes:'\201E' '\201C' '\201A' '\2018';}
+:lang(nl){quotes:'\201E' '\201D' '\201A' '\2019';}
+:lang(pl){quotes:'\201E' '\201D' '\201A' '\2019';}
+:lang(ro){quotes:'\201E' '\201C' '\201A' '\2018';}
+:lang(ru){quotes:'\00AB' '\00BB' '\201E' '\201C';}
+:lang(sk){quotes:'\201E' '\201C' '\201A' '\2018';}
+:lang(sq){quotes:'\00AB' '\00BB' '\2039' '\203A';}
+:lang(sr){quotes:'\201E' '\201C' '\201A' '\2018';}
+:lang(sv){quotes:'\201D' '\201D' '\2019' '\2019';}
+:lang(tr){quotes:'\00AB' '\00BB' '\2039' '\203A';}
+:lang(vi){font-family:"Lucida Grande","Vu Phu Tho","DejaVu Sans",inherit;}
+:lang(vi) a:hover,:lang(vi) a:active{text-decoration:none;color:#606047;}
+:lang(zh){font-size:1.5em;}
