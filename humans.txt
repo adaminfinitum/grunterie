@@ -1,3 +1,5 @@
+/*! Move this file, robots.txt, and any .htaccess files to the root directory of the site on your server in production. */
+
 /* Foundation was made by ZURB, an interaction design and design strategy firm in Campbell, CA */
 /* zurb.com */
 /* humanstxt.org */
@@ -6,3 +8,11 @@
   Standards: HTML5, CSS3
   Components: jQuery, Orbit, Reveal
   Software: PHP Storm, Sublime Text, Git, Grunt, Vagrant, VVV, WordPress
+
+  Theme Credits:
+  Grunterie (github.com/gpspake/grunterie)
+  is a fork of Reverie (github.com/milohuang/reverie)
+  which uses Grunt for task automation (Reverie was built before Foundation used Grunt).
+
+  Adam Powell (github.com/adaminfinitum) forked Grunterie (github.com/adaminfinitum/grunterie)
+  and customized to be be more performant, more accessible,more user-friendly with better SEO.
